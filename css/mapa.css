@@ -1,0 +1,94 @@
+@import url('componentes/navbar.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/fondos/fondo4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    width: 90%; /* Cambiar a 90% para un mejor ajuste */
+    max-width: 500px; /* Establece un ancho máximo */
+    padding: 10px;
+    margin: auto;
+    margin-top: 10%;
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.planta {
+    width: 100%; /* Cambia a 100% para asegurar que ocupen el ancho completo */
+    max-width: 300px; /* Establece un ancho máximo */
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.planta img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.planta.active img {
+    transform: scale(1.4);
+    z-index: 10;
+}
+
+.planta.inactive img {
+    transform: scale(0.6);
+    filter: brightness(0.5);
+    transition: transform 0.5s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 5px;
+        width: 90%; /* Mantener 90% para tablets */
+    }
+    
+    .planta {
+        max-width: 40%; /* Cambiar a 40% para mejor ajuste en tablets */
+        flex: 1 1 40%; /* Asegurar que las plantas se ajusten correctamente */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 10px;
+        width: 90%; /* Mantener 90% en móviles */
+    }
+
+    .planta {
+        max-width: 95%; /* Cambiar a 95% para móviles */
+        flex: 1 1 95%; /* Asegurar que se ajusten en móviles */
+    }
+
+    .contenedor {
+        gap: 10px; /* Reduce el espacio entre cajas */
+    }
+}
