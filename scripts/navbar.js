@@ -1,0 +1,203 @@
+// ========================================
+// FUNCIONALIDAD DE LA BARRA DE NAVEGACIÓN
+// ========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ========================================
+    // MENÚ DESPLEGABLE DEL LOGO (REDES SOCIALES)
+    // ========================================
+    const logoBtn = document.getElementById('logoBtn');
+    const socialDropdown = document.getElementById('socialDropdown');
+    
+    // Verificamos que los elementos existan antes de agregar eventos
+    if (logoBtn && socialDropdown) {
+        // Al hacer clic en el logo, mostrar/ocultar el menú de redes sociales
+        logoBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            socialDropdown.classList.toggle('show');
+        });
+        
+        // Cerrar el menú desplegable cuando se hace clic fuera de él
+        document.addEventListener('click', function(e) {
+            if (!logoBtn.contains(e.target) && !socialDropdown.contains(e.target)) {
+                socialDropdown.classList.remove('show');
+            }
+        });
+    }
+    
+    // ========================================
+    // ANIMACIONES Y EFECTOS DE LOS BOTONES DEL MENÚ
+    // ========================================
+    const menuButtons = document.querySelectorAll('.menu-btn');
+    
+    // Aplicar efectos a cada botón del menú
+    menuButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+
+            // EFECTO VISUAL: Crear onda al hacer clic (ripple effect)
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            // Configurar propiedades del efecto onda
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple');
+            
+            // Agregar el efecto visual al botón
+            this.appendChild(ripple);
+            
+            // Eliminar el efecto después de que termine la animación
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+
+            // NAVEGACIÓN: Manejar enlaces internos vs externos
+            // Si el enlace es una ancla interna (#inicio, #autoridades), hacer scroll suave
+            if (href && href.startsWith('#')) {
+                e.preventDefault(); // Prevenir navegación por defecto
+                
+                const sectionId = href.substring(1); // Quitar el #
+                const targetSection = document.getElementById(sectionId);
+                
+                if (targetSection) {
+                    // Pequeña pausa para que el efecto visual sea visible
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start' 
+                        });
+                    }, 100);
+                }
+            }
+            // Si es un enlace a otra página, dejar que el navegador lo maneje normalmente
+        });
+        
+        // EFECTOS HOVER: Animaciones al pasar el mouse
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px) scale(1.02)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+    
+    // ========================================
+    // EFECTOS DE SCROLL EN LA BARRA DE NAVEGACIÓN
+    // ========================================
+    const navbar = document.querySelector('.navbar');
+    let lastScrollTop = 0; // Para detectar dirección del scroll
+    
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // CAMBIO DE APARIENCIA: Navbar más opaco al hacer scroll
+            if (scrollTop > 50) {
+                navbar.style.background = 'rgba(3, 26, 47, 0.8)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                navbar.style.background = 'rgba(3, 26, 47, 0.5)';
+                navbar.style.boxShadow = 'none';
+            }
+            
+            // OCULTAR/MOSTRAR NAVBAR: Esconder al scrollear hacia abajo, mostrar al subir
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Usuario scrolleando hacia abajo - ocultar navbar
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Usuario scrolleando hacia arriba - mostrar navbar
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            // Actualizar posición anterior del scroll
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    }
+    
+    // ========================================
+    // FUNCIONALIDAD DE LOS ENLACES DE REDES SOCIALES
+    // ========================================
+    const socialLinks = document.querySelectorAll('.social-link');
+    
+    socialLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevenir navegación por defecto
+            
+            // Obtener el nombre de la plataforma social
+            const platform = this.querySelector('span').textContent;
+            console.log('Abriendo:', platform);
+            
+            // ENLACES REALES: Descomentar y configurar los enlaces reales
+            /*
+            switch(platform) {
+                case 'Facebook':
+                    window.open('https://facebook.com/tecnica1vicentelopez', '_blank');
+                    break;
+                case 'Instagram':
+                    window.open('https://instagram.com/tecnica1vl', '_blank');
+                    break;
+                case 'Twitter':
+                    window.open('https://twitter.com/tecnica1vl', '_blank');
+                    break;
+                case 'YouTube':
+                    window.open('https://youtube.com/tecnica1vl', '_blank');
+                    break;
+            }
+            */
+            
+            // EFECTO VISUAL: Animación de clic en el enlace
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+    });
+    
+    // Mensaje de confirmación en consola
+    console.log('🎓 Técnica N°1 de Vicente López - Barra de navegación cargada correctamente');
+});
+
+// ========================================
+// ESTILOS DINÁMICOS PARA EFECTOS VISUALES
+// ========================================
+const navbarStyle = document.createElement('style');
+navbarStyle.textContent = `
+    /* Efecto de onda al hacer clic en botones */
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        transform: scale(0);
+        animation: efecto-onda 0.6s linear;
+        pointer-events: none;
+    }
+    
+    @keyframes efecto-onda {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    /* Clase para mostrar el menú desplegable */
+    .social-dropdown.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+    }
+    
+    /* Configuración base para efectos en botones */
+    .menu-btn {
+        position: relative;
+        overflow: hidden;
+    }
+`;
+// Agregar los estilos al documento
+document.head.appendChild(navbarStyle);
