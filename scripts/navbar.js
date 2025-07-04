@@ -12,12 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Verificamos que los elementos existan antes de agregar eventos
     if (logoBtn && socialDropdown) {
-        // Al hacer clic en el logo, mostrar/ocultar el menú de redes sociales
-        logoBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            socialDropdown.classList.toggle('show');
-        });
-        
         // Cerrar el menú desplegable cuando se hace clic fuera de él
         document.addEventListener('click', function(e) {
             if (!logoBtn.contains(e.target) && !socialDropdown.contains(e.target)) {
@@ -162,6 +156,36 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mensaje de confirmación en consola
     console.log('🎓 Técnica N°1 de Vicente López - Barra de navegación cargada correctamente');
+
+    // Menú hamburguesa responsive
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const closeMobileMenuBtn = document.getElementById('closeMobileMenu');
+
+    function openMobileMenu() {
+        mobileMenu.classList.add('open');
+        mobileMenuOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('open');
+        mobileMenuOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    if (hamburgerBtn && mobileMenu && mobileMenuOverlay) {
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+        // Cerrar al hacer clic en un enlace del menú móvil
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    }
+    // Cerrar con la cruz
+    if (closeMobileMenuBtn) {
+        closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+    }
 });
 
 // ========================================
