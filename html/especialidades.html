@@ -81,13 +81,21 @@
                         <p class="texto">Formamos desarrolladores de software con sólidos <br> conocimientos en algoritmia, estructuras de datos y <br>metodologías de desarrollo, preparados para enfrentar los <br>desafíos tecnológicos actuales.</p>
                     </div>
                     <div>
-                        <img src="../img/ejemplo.png" alt="Ejemplo_de_codigo">
+                        <img id="ejemplo" src="../img/ejemplo.png" alt="Ejemplo_de_codigo">
                     </div>
                     <div class="cont_icon">
-                        <img class="icono" src="../img/php.ico" alt="php_icono">
-                        <img class="icono" src="../img/java.ico" alt="java_icono">
-                        <img class="icono" src="../img/python.ico" alt="python_icono">
-                        <img class="icono" src="../img/js.ico" alt="js_icono">
+                        <button onclick="ejemplophp()" class="boton_icon">
+                            <img id="php" class="icono" src="../img/php_apagado.ico" alt="php_icono">
+                        </button>
+                        <button onclick="ejemplojava()" class="boton_icon">
+                            <img id="java" class="icono" src="../img/java.ico" alt="java_icono">
+                        </button>
+                        <button onclick="ejemplopy()" class="boton_icon">
+                            <img id="python" class="icono" src="../img/python_apagado.ico" alt="python_icono">
+                        </button>
+                        <button onclick="ejemplojs()" class="boton_icon">
+                            <img id="JS" class="icono" src="../img/js.ico" alt="js_icono">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -117,5 +125,6 @@
     </main>
 
     <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/especialidades.js"></script>
 </body>
 </html>
