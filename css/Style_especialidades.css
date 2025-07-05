@@ -1,0 +1,99 @@
+body{
+    background-color: whitesmoke;
+}
+
+/*Seccion de titulo y titulo*/
+
+.cont_title{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 3.5rem;
+    color: rgb(48, 65, 84);
+}
+
+.sub-titulo{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*Seccion de Especialidades programacion y electronica*/
+
+.cont_especialidades{
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.cuadrito{
+    border-radius: 20%;
+    height: 7vh;
+    font-size: 2.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(48, 65, 84);
+}
+
+.titulo_esp{
+    font-size: 2rem;
+    color: rgb(48, 65, 84);
+}
+
+.orden{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    left: 25px;
+}
+
+.cont_esp{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linea-divisoria {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0; 
+  width: 90%;
+  margin: 16px auto 0 auto; 
+}
+
+.texto{
+    color: rgb(48, 65, 84);
+    font-size: 1.1rem;
+}
+
+.cont_icon{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.icono{
+    width: 2.5rem;
+    margin-left: 15px;
+    position: relative;
+    right: 5px;
+}
+
+.ejemplo2{
+    width: 25rem;
+    margin-left: 20px;
+}
+
+.boton_icon{
+ background-color: white;
+ border-radius: 100%;
+ border: none;
+}
