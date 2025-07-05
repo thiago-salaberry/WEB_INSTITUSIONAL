@@ -1,0 +1,70 @@
+*{
+    font-weight: 700;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-container{
+    background-color: #031A2FCC;
+    margin: 0 10%;
+    margin-top: 100px;
+    border-radius: 25px;
+    height: 80vh;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-option-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    background-color: #A1A9B1B2;
+    width: fit-content;
+    padding: 0 1rem;
+}
+
+.container-option-buttons button{
+    width: 70%;
+}
+
+.container-option-buttons span{
+    font-size: 2rem;
+    margin: 0 1rem;
+    width: 100%;
+}
+
+#main-content{
+    animation-name: fade-in-main-content;
+    animation-duration: 1s;
+}
+
+#school-email{
+    padding: 0.2rem 0;
+    background-color: #C0C6CBCC;
+    font-weight: 1000;
+    color: #031A2FCC;
+}
+
+@keyframes fade-in-main-content {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
