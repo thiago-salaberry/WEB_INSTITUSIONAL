@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialidades - Técnica N° 1 de Vicente López</title>
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/Style_especialidades.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="navbar">
         <div class="navbar-container">
             <!-- Logo con dropdown de redes sociales -->
             <div class="logo-container">
-                <img src="../IMG/logo.png" alt="Logo Técnica N°1" class="logo" id="logoBtn">
+                <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
                 <div class="social-dropdown" id="socialDropdown">
                     <a href="#" class="social-link">
                         <i class="fab fa-facebook-f"></i>
@@ -50,8 +52,68 @@
             </nav>
         </div>
     </header>
-
+    
     <main>
+        <section class="titulos">
+            <div class="cont_title">
+                <h1 class="titulo">Especialidades Técnicas</h1>
+            </div>
+            <div class="cont_title">
+                <h2 class="sub-titulo">Formación profecional de calidad en las áreas tecnológicas más demandadas <br> del mercado laboral</h2>
+            </div>
+        </section>
+
+        <section class="cont_esp">
+            <div class="cont_especialidades">
+                <div class="orden">
+                    <div class="cuadrito">
+                        <i class="bi bi-braces"></i>
+                    </div>
+                    <div>
+                        <h2 class="titulo_esp">Programación</h2>
+                        <p class="acompaña">Descargar diseño curricular</p>
+                    </div>
+                </div>
+                <hr class="linea-divisoria">
+
+                <div>
+                    <div>
+                        <p class="texto">Formamos desarrolladores de software con sólidos <br> conocimientos en algoritmia, estructuras de datos y <br>metodologías de desarrollo, preparados para enfrentar los <br>desafíos tecnológicos actuales.</p>
+                    </div>
+                    <div>
+                        <img src="../img/ejemplo.png" alt="Ejemplo_de_codigo">
+                    </div>
+                    <div class="cont_icon">
+                        <img class="icono" src="../img/php.ico" alt="php_icono">
+                        <img class="icono" src="../img/java.ico" alt="java_icono">
+                        <img class="icono" src="../img/python.ico" alt="python_icono">
+                        <img class="icono" src="../img/js.ico" alt="js_icono">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont_especialidades">
+                <div class="orden">
+                    <div class="cuadrito">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+                    <div>
+                        <h2 class="titulo_esp">Electronica</h2>
+                        <p class="acompaña">Descargar diseño curricular</p>
+                    </div>
+                </div>
+                <hr class="linea-divisoria">
+
+                <div>
+                    <div>
+                        <p class="texto">Capacitamos técnicos especialistas en sistemas <br>electrónicos, automatización y control industrial, con <br> énfasis en el diseño, implementación y mantenimiento de <br> circuitos y sistemas embebidos.</p>
+                    </div>
+                    <div>
+                        <img class="ejemplo2" src="../img/ejemplo2.png" alt="Ejemplo_de_circuito">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="../scripts/navbar.js"></script>
