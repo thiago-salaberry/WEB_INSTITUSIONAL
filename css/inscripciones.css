@@ -20,13 +20,29 @@ main{
     align-items: center;
 }
 
+p, h2, li{
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+li{
+    min-width: 30rem;
+}
+
+.subjects-list li{
+    margin: 1rem;
+}
+
 .inscription-container{
     background-color: #031A2FCC;
     margin: 0 10%;
     margin-top: 100px;
     border-radius: 25px;
     height: 80vh;
-    padding-left: 2rem;
+    padding-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,9 +68,14 @@ main{
     width: 100%;
 }
 
-#main-content{
+.data-container, .grade_subject{
     animation-name: fade-in-main-content;
     animation-duration: 1s;
+}
+
+.data-container{
+    height: 80%;
+    padding: 2rem 0 1rem;
 }
 
 #school-email{
@@ -62,6 +83,18 @@ main{
     background-color: #C0C6CBCC;
     font-weight: 1000;
     color: #031A2FCC;
+}
+
+.subjects-list{
+    margin-top: 2rem;
+}
+
+.data_header{
+    margin-bottom: 1rem;
+}
+
+.grade_subject{
+    height: 20rem;
 }
 
 @keyframes fade-in-main-content {
