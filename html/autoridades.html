@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoridades - Técnica N° 1 de Vicente López</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/autoridades.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo con dropdown de redes sociales -->
+            <div class="logo-container">
+                <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
+                <div class="social-dropdown" id="socialDropdown">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menú principal -->
+            <nav class="main-menu">
+                <a href="../index.html" class="menu-btn" data-section="inicio">
+                    <span>Inicio</span>
+                </a>
+                <a href="autoridades.html" class="menu-btn" data-section="autoridades">
+                    <span>Autoridades</span>
+                </a>
+                <a href="especialidades.html" class="menu-btn" data-section="especialidades">
+                    <span>Especialidades</span>
+                </a>
+                <a href="inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">
+                    <span>Inscripciones 2026</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <div class="main">
+
+        <!--Directivos-->
+
+        <!--plantilla-->
+        <h1 class="h1-cargo">Equipo Directivo</h1>
+        <div class="grid">
+            <div class="autoridad" onclick="abrirModal()">
+                <div class="foto-container">
+                    <img src="../img/logo.webp" alt="foto del directivo">
+                </div>
+                <div class="info-autoridad">
+                    <h2 class="nombre-autoridad">Nombre Apellido</h2>
+                    <span class="cargo">Cargo</span>
+                </div>
+            </div>
+        </div>
+
+        <!--Secretaria-->
+        <h1 class="h1-cargo">Secretaria</h1>
+        
+
+        <!--Departamentos-->
+        <h1 class="h1-cargo">Jefes de departamentos</h1>
+        
+
+        <!--Preceptores-->
+        <h1 class="h1-cargo">Preceptores</h1>
+        
+
+        <!--Auxiliares-->
+        <h1 class="h1-cargo">Auxiliares</h1>
+        
+
+    <!-- Modal - plantilla -->
+    <div id="modalDirectivo" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div class="modal-info-autoridad">
+                    <h3 id="modalNombre" class="modal-name">Nombre Apellido</h3>
+                    <p id="modalCargo" class="modal-cargo">Cargo</p>
+                </div>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImagen" src="../img/logo.webp" alt="Foto del directivo">
+                </div>
+                <div class="modal-info">
+                    <p id="modalDescripcion" class="modal-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod assumenda esse sint explicabo distinctio, tenetur odit ducimus totam accusamus aliquid numquam. Ullam sunt ipsum dignissimos consectetur, fuga veniam sint similique?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/autoridades.js">
+    </script>
+
+</body>
+</html>

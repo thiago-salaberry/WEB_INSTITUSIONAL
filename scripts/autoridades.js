@@ -1,14 +1,5 @@
-function abrirModal(imgUrl, nombre, cargo, descripcion) {
+function abrirModal() {
             const modal = document.getElementById('modalDirectivo');
-            const modalImagen = document.getElementById('modalImagen');
-            const modalNombre = document.getElementById('modalNombre');
-            const modalCargo = document.getElementById('modalCargo');
-            const modalDescripcion = document.getElementById('modalDescripcion');
-            
-            modalImagen.src = imgUrl;
-            modalNombre.textContent = nombre;
-            modalCargo.textContent = cargo;
-            modalDescripcion.textContent = descripcion || 'Sin descripción disponible.';
             
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
