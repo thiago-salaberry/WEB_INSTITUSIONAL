@@ -25,6 +25,12 @@ html, body {
     z-index: 1000;
     padding: 0;
     transition: all 0.3s ease;
+    position: fixed;
+    display: flow-root;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .navbar-container {
@@ -491,13 +497,7 @@ html, body {
         height: 40px;
     }
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
+
 
 
 /* Asegurar que el botón hamburguesa esté visible */
