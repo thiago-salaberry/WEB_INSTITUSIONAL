@@ -450,3 +450,71 @@ html, body {
         font-size: 1.7rem;
     }
 }
+/* ========================================
+   RESPONSIVE ESPECÍFICO PARA INSCRIPCIONES
+======================================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    .navbar-container {
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        height: 45px;
+    }
+      .main-menu {
+        display: none !important;
+    }
+    
+    .hamburger {
+        display: flex !important;
+    }
+    
+    .navbar-container {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        padding: 8px 10px;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+/* Asegurar que el botón hamburguesa esté visible */
+.hamburger {
+    position: relative;
+    z-index: 1100;
+}
+
+/* Asegurar que el menú móvil funcione */
+.mobile-menu {
+    backdrop-filter: blur(15px);
+}
+
+.mobile-menu.open {
+    right: 0 !important;
+}
+
+.mobile-menu-overlay.open {
+    display: block !important;
+}

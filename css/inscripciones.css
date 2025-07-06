@@ -1,23 +1,30 @@
-*{
+/* ========================================
+   ESTILOS BASE PARA INSCRIPCIONES
+======================================== */
+* {
     font-weight: 700;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     min-height: 100%;
     background-image: url(../img/fondo3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 80px;
 }
 
-main{
-    min-height: 100vh;
+main {
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 p, h2, li{
@@ -36,36 +43,77 @@ li{
     margin: 1rem;
 }
 
-.inscription-container{
+p, h2, li{
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+li{
+    min-width: 30rem;
+}
+
+.subjects-list li{
+    margin: 1rem;
+}
+
+/* ========================================
+   CONTENEDOR PRINCIPAL DE INSCRIPCIONES
+======================================== */
+.inscription-container {
     background-color: #031A2FCC;
-    margin: 0 10%;
-    margin-top: 100px;
     border-radius: 25px;
     height: 80vh;
     padding-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 
-.container-option-buttons{
+.buttons-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+======================================== */
+#main-content {
+    animation: fade-in-main-content 1s ease-in-out;
+    text-align: center;
+}
+
+#main-content h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   CONTENEDOR DE BOTONES DE OPCIONES
+======================================== */
+.container-option-buttons {
+    background-color: #A1A9B1B2;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 50vh;
-    background-color: #A1A9B1B2;
-    width: fit-content;
-    padding: 0 1rem;
-}
-
-.container-option-buttons button{
-    width: 70%;
-}
-
-.container-option-buttons span{
-    font-size: 2rem;
-    margin: 0 1rem;
+    gap: 1.5rem;
     width: 100%;
+    max-width: 400px;
 }
 
 .data-container, .grade_subject{
@@ -81,8 +129,12 @@ li{
 #school-email{
     padding: 0.2rem 0;
     background-color: #C0C6CBCC;
-    font-weight: 1000;
-    color: #031A2FCC;
+    color: #031A2F;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .subjects-list{
@@ -98,6 +150,197 @@ li{
 }
 
 @keyframes fade-in-main-content {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+    0% { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* --- TABLETS Y MÓVILES GRANDES (992px) --- */
+@media screen and (max-width: 991.98px) {
+    .inscription-container {
+        padding: 1.5rem;
+    }
+    
+    .main-content-col {
+        margin-bottom: 2rem;
+    }
+    
+    #main-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .content-text p {
+        font-size: 1rem;
+    }
+    
+    .container-option-buttons {
+        max-width: 100%;
+    }
+}
+
+/* --- TABLETS (768px) --- */
+@media screen and (max-width: 767.98px) {
+    body {
+        background-attachment: scroll;
+        padding-top: 70px;
+    }
+    
+    main {
+        min-height: calc(100vh - 70px);
+        padding: 15px;
+    }
+    
+    .inscription-container {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    #main-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .content-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .container-option-buttons {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .container-option-buttons span {
+        font-size: 1.5rem;
+    }
+    
+    .container-option-buttons button {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    #school-email {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
+
+/* --- MÓVILES (576px) --- */
+@media screen and (max-width: 575.98px) {
+    main {
+        padding: 10px;
+    }
+    
+    .inscription-container {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .main-content-col,
+    .buttons-col {
+        padding: 0.5rem;
+    }
+    
+    #main-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-text p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .container-option-buttons {
+        padding: 1rem;
+    }
+    
+    .container-option-buttons span {
+        font-size: 1.3rem;
+    }
+    
+    .container-option-buttons button {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    #school-email {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+}
+
+/* --- MÓVILES PEQUEÑOS (400px) --- */
+@media screen and (max-width: 400px) {
+    .inscription-container {
+        padding: 0.8rem;
+    }
+    
+    #main-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .content-text p {
+        font-size: 0.85rem;
+    }
+    
+    .container-option-buttons span {
+        font-size: 1.2rem;
+    }
+    
+    .container-option-buttons button {
+        font-size: 0.85rem;
+    }
+    
+    #school-email {
+        font-size: 0.85rem;
+    }
+}
+
+/* --- ORIENTACIÓN HORIZONTAL EN MÓVILES --- */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        padding-top: 60px;
+    }
+    
+    main {
+        min-height: calc(100vh - 60px);
+        padding: 10px;
+    }
+    
+    .inscription-container {
+        padding: 1rem;
+    }
+    
+    .main-content-col {
+        margin-bottom: 1rem;
+    }
+    
+    #main-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content-text p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .container-option-buttons {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .container-option-buttons span {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
 }
