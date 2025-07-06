@@ -13,60 +13,98 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="navbar-container">
-            <!-- Logo con dropdown de redes sociales -->
-            <div class="logo-container">
-                <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
-                <div class="social-dropdown" id="socialDropdown">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-youtube"></i>
-                        <span>YouTube</span>
-                    </a>
-                </div>
+    <div class="navbar-container">
+        <!-- Logo con dropdown de redes sociales -->
+        <div class="logo-container">
+            <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
+            <div class="social-dropdown" id="socialDropdown">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
             </div>
-
-            <!-- Menú principal -->
-            <nav class="main-menu">
-                <a href="../index.html" class="menu-btn" data-section="inicio">
-                    <span>Inicio</span>
-                </a>
-                <a href="autoridades.html" class="menu-btn" data-section="autoridades">
-                    <span>Autoridades</span>
-                </a>
-                <a href="especialidades.html" class="menu-btn" data-section="especialidades">
-                    <span>Especialidades</span>
-                </a>
-                <a href="inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">
-                    <span>Inscripciones 2026</span>
-                </a>
-            </nav>
         </div>
-    </header>
 
-    <main>
-        <div class="inscription-container container-xxl">
-            <div class="row h-100">
-                <div id="main-content" class="col-7 d-flex align-items-center justify-content-evenly flex-lg-column">
-                    <h2 class="text-center text-white">Inscripciones 2025</h2>
-                    <div>
-                        <p class="text-white">¿Te gusta resolver problemas y crear soluciones innovadoras? En nuestra escuela, contamos con los recursos necesarios para que puedas expresar tu creatividad. Tendrás acceso a computadoras, netbooks y herramientas de trabajo. Desde el primer día, estarás trabajando en proyectos, desde la creación de un horno solar, un semáforo con leds y de forma más avanzada la producción de circuitos electrónicos simples hasta aplicaciones web complejas. Esta experiencia te permitirá desarrollar habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo, preparándote para los desafíos del mundo profesional.</p>
+        <!-- Menú principal (desktop) -->
+        <nav class="main-menu">
+            <a href="../index.html" class="menu-btn" data-section="inicio">
+                <span>Inicio</span>
+            </a>
+            <a href="autoridades.html" class="menu-btn" data-section="autoridades">
+                <span>Autoridades</span>
+            </a>
+            <a href="especialidades.html" class="menu-btn" data-section="especialidades">
+                <span>Especialidades</span>
+            </a>
+            <a href="inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">
+                <span>Inscripciones 2026</span>
+            </a>
+        </nav>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMobileMenu">&times;</button>
+        <a href="../index.html" class="menu-btn">
+            <span>Inicio</span>
+        </a>
+        <a href="autoridades.html" class="menu-btn">
+            <span>Autoridades</span>
+        </a>
+        <a href="especialidades.html" class="menu-btn">
+            <span>Especialidades</span>
+        </a>
+        <a href="inscripciones.html" class="menu-btn inscripciones-btn">
+            <span>Inscripciones 2026</span>
+        </a>
+        <div class="mobile-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Overlay para cerrar menú -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+</header>
+
+<main>
+    <div class="inscription-container">
+        <div class="container-fluid">
+            <div class="row gx-0">
+                <div class="col-12 col-lg-7 main-content-col">
+                    <div id="main-content">
+                        <h2 class="text-center text-white mb-4">Inscripciones 2026</h2>
+                        <div class="content-text">
+                            <p class="text-white">¿Te gusta resolver problemas y crear soluciones innovadoras? En nuestra escuela, contamos con los recursos necesarios para que puedas expresar tu creatividad. Tendrás acceso a computadoras, netbooks y herramientas de trabajo. Desde el primer día, estarás trabajando en proyectos, desde la creación de un horno solar, un semáforo con leds y de forma más avanzada la producción de circuitos electrónicos simples hasta aplicaciones web complejas. Esta experiencia te permitirá desarrollar habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo, preparándote para los desafíos del mundo profesional.</p>
+                        </div>
+                        <div id="school-email" class="text-center rounded w-100 mt-4">
+                            Consultas solo por mail: inscripcion@tecnica1vl.org
+                        </div>
                     </div>
-                    <span id="school-email" class="text-center rounded w-100">Consultas solo por mail: inscripcion@tecnica1vl.org</span>
                 </div>
-                <div class="container col-5 d-flex align-items-center justify-content-center h-100">
-                    <div class="container-option-buttons rounded d-flex align-items-center justify-content-evenly flex-lg-column">
+                <div class="col-12 col-lg-5 buttons-col">
+                    <div class="container-option-buttons rounded">
                         <span class="text-center">Información clave</span>
                         <button class="btn btn-primary">¿Por qué inscribirse?</button>
                         <button class="btn btn-primary">¿Qué traer?</button>
@@ -76,7 +114,8 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
     <script src="../scripts/navbar.js"></script>
 </body>
