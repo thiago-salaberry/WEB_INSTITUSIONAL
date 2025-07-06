@@ -37,8 +37,8 @@ function show_container(container_index){
 
 why_button.onclick = function(){show_container(0);};
 things_button.onclick = function(){show_container(1);};
-when_button.onclick = function(){show_container(2);};
-subjects_button.onclick = function(){show_container(3);};
+subjects_button.onclick = function(){show_container(2);};
+when_button.onclick = function(){show_container(3);};
 
 button_subjects[0].onclick = function(){show_list(0);};
 button_subjects[1].onclick = function(){show_list(1);};

@@ -85,7 +85,6 @@ li{
 ======================================== */
 #main-content {
     animation: fade-in-main-content 1s ease-in-out;
-    text-align: center;
 }
 
 #main-content h2 {
@@ -123,7 +122,6 @@ li{
 
 .data-container{
     height: 80%;
-    padding: 2rem 0 1rem;
 }
 
 #school-email{
@@ -147,6 +145,10 @@ li{
 
 .grade_subject{
     height: 20rem;
+}
+
+#neccesary_things{
+    padding: 0;
 }
 
 @keyframes fade-in-main-content {
