@@ -36,17 +36,88 @@ h2 {
     text-align: center;
 }
 
-li {
-    min-width: 30rem;
-}
 
 .subjects-list li {
     margin: 1rem;
 }
 
+.list_container{
+    margin: 0 1rem;
+}
+
+
+
+/* ========================================
+   CLASES DE BOOTSTRAP
+======================================== */
+
+.text-white{
+    color: #fff;
+}
+
+.container-fluid, .container{
+    width: 100%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.justify-content-start{
+    justify-content: start;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #007bff;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.row-60{
+    display: grid;
+    grid-template-columns: 58.3% 41.7%;
+    column-gap: 1rem;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
 /* ========================================
    CONTENEDOR PRINCIPAL DE INSCRIPCIONES
 ======================================== */
+
 .inscription-container {
     background-color: #031A2FCC;
     border-radius: 25px;
@@ -100,6 +171,7 @@ li {
 .container-option-buttons {
     background-color: #A1A9B1B2;
     padding: 2rem 1.5rem;
+    margin-left: 1rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -140,7 +212,7 @@ li {
 .data-container {
     height: auto;
     min-height: 60vh;
-    width: 100%;
+    width: 50vw;
     padding: 1rem;
 }
 

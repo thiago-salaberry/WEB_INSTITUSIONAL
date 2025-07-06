@@ -18,7 +18,7 @@ function show_list(list_index){
     hide_every_subject();
     grade_list[list_index].classList.remove("d-none");
     grade_list[list_index].classList.add("d-flex");
-    console.log("HOLAAAA")
+    console.log("HOLAAA")
 }
 
 
