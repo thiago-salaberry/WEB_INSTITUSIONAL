@@ -84,18 +84,8 @@
                         <img id="ejemplo" src="../img/ejemplo.png" alt="Ejemplo_de_codigo">
                     </div>
                     <div class="cont_icon">
-                        <button onclick="ejemplophp()" class="boton_icon">
-                            <img id="php" class="icono" src="../img/php_apagado.ico" alt="php_icono">
-                        </button>
-                        <button onclick="ejemplojava()" class="boton_icon">
-                            <img id="java" class="icono" src="../img/java.ico" alt="java_icono">
-                        </button>
-                        <button onclick="ejemplopy()" class="boton_icon">
-                            <img id="python" class="icono" src="../img/python_apagado.ico" alt="python_icono">
-                        </button>
-                        <button onclick="ejemplojs()" class="boton_icon">
-                            <img id="JS" class="icono" src="../img/js.ico" alt="js_icono">
-                        </button>
+                        <button class="activar">Diseño Currircular</button>
+                        <button onclick="mostrarCuadro()" class="activar">Perfil Tecnico</button>
                     </div>
                 </div>
             </div>
@@ -119,9 +109,48 @@
                     <div>
                         <img class="ejemplo2" src="../img/ejemplo2.png" alt="Ejemplo_de_circuito">
                     </div>
+                    <div class="cont_icon">
+                        <button class="activar">Diseño Currircular</button>
+                        <button onclick="mostrarCuadro2()" class="activar">Perfil Tecnico</button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <div id="fondoOscuro" class="fondo-oscuro" onclick="cerrarCuadro()"></div>
+
+        <div class="contenedor-centro">
+            <div id="cuadro" class="card">
+                <h2>PERFIL TECNICO PROGRAMACION</h2>
+                <ul>
+                    <li>Realizar programas o componentes de sistemas de computación.</li>
+                    <li>Diseño e implementación de Sitios WEB dinámicos y estáticos.</li>
+                    <li>Diseño e implementación de sistemas de bases de datos.</li>
+                    <li>Diseño e implementación de aplicaciones móviles y de escritorio.</li>
+                    <li>Interpretar especificaciones de diseño, documentar los productos.</li>
+                </ul>
+                <p>
+                    Realizados, verificar los componentes programados, buscar causas de mal funcionamiento y corregir los programas o adaptarlos a cambios en las especificaciones – desarrollando las actividades descritas en el perfil profesional y cumpliendo con los criterios de realización establecidos para las mismas en el marco de un equipo de trabajo organizado por proyecto.
+                </p>
+            </div>
+        </div>
+<!--Electronica-->
+        <div class="contenedor-centro">
+            <div id="cuadro2" class="card2">
+                <h2>PERFIL TECNICO ELECTRONICA</h2>
+                <ul>
+                    <li>Proyectar, componentes y equipos de electrónica analógica y/o digital, con tecnología electrónica estándar y de baja o mediana complejidad.</li>
+                    <li>Realizar ensayos y mediciones eléctricas y electrónicas en dispositivos, componentes, equipos e instalaciones con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
+                    <li>Operar componentes, productos y equipos con electrónica analógica y/o digital.</li>
+                    <li>Realizar los mantenimientos, predictivo, preventivo, funcional operativo, y correctivo de componentes, productos y equipos con electrónica estándar, analógica y/o digital, de baja o mediana complejidad.</li>
+                    <li>Montar dispositivos y componentes con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
+                    <li>Instalar productos y equipos con electrónica analógica y/o digital.</li>
+                    <li>Realizar la selección, asesoramiento y comercialización de dispositivos, componentes, productos y equipos con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
+                    <li>Generar emprendimientos con electrónica analógica y/o digital de baja o mediana complejidad.</li>
+                </ul>
+            </div>
+        </div>
+
     </main>
 
     <script src="../scripts/navbar.js"></script>

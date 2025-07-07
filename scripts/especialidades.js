@@ -1,51 +1,15 @@
-function ejemplopy(){
-    const python = document.getElementById("python");
-    const JS= document.getElementById("JS");
-    const php= document.getElementById("php");
-    const java= document.getElementById("java");
-    const imagen = document.getElementById("ejemplo");
-    imagen.src = "../img/ejemplo3.png";
-    python.src = "../img/python.ico";
-    JS.src = "../img/js_apagado.ico";
-    php.src = "../img/php_apagado.ico";
-    java.src = "../img/java.ico";
+function mostrarCuadro() {
+    document.getElementById('fondoOscuro').style.display = 'block';
+    document.getElementById('cuadro').style.display = 'block';
 }
 
-function ejemplophp(){
-    const python = document.getElementById("python");
-    const JS= document.getElementById("JS");
-    const php= document.getElementById("php");
-    const java= document.getElementById("java");
-    const imagen = document.getElementById("ejemplo");
-    imagen.src = "../img/ejemplo4.png";
-    python.src = "../img/python_apagado.ico";
-    JS.src = "../img/js_apagado.ico";
-    php.src = "../img/php.ico";
-    java.src = "../img/java.ico";
+function mostrarCuadro2(){
+    document.getElementById('fondoOscuro').style.display = 'block';
+    document.getElementById('cuadro2').style.display='block'
 }
 
-function ejemplojs(){
-    const python = document.getElementById("python");
-    const JS= document.getElementById("JS");
-    const php= document.getElementById("php");
-    const java= document.getElementById("java");
-    const imagen = document.getElementById("ejemplo");
-    imagen.src = "../img/ejemplo.png";
-    python.src = "../img/python_apagado.ico";
-    JS.src = "../img/js.ico";
-    php.src = "../img/php_apagado.ico";
-    java.src = "../img/java.ico";
-}
-
-function ejemplojava(){
-    const python = document.getElementById("python");
-    const JS= document.getElementById("JS");
-    const php= document.getElementById("php");
-    const java= document.getElementById("java");
-    const imagen = document.getElementById("ejemplo");
-    imagen.src = "../img/ejemplo5.png";
-    python.src = "../img/python_apagado.ico";
-    JS.src = "../img/js_apagado.ico";
-    php.src = "../img/php_apagado.ico";
-    java.src = "../img/java_original.ico";
+function cerrarCuadro() {
+    document.getElementById('fondoOscuro').style.display = 'none';
+    document.getElementById('cuadro').style.display = 'none';
+    document.getElementById('cuadro2').style.display = 'none';
 }

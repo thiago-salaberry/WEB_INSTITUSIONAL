@@ -76,15 +76,8 @@ body{
 
 .cont_icon{
     display: flex;
-    justify-content: right;
-    padding-right: 10px;
-}
-
-.icono{
-    width: 2.5rem;
-    margin-left: 15px;
-    position: relative;
-    right: 5px;
+    justify-content: center;
+    margin: 10px;
 }
 
 .ejemplo2{
@@ -92,8 +85,101 @@ body{
     margin-left: 20px;
 }
 
-.boton_icon{
- background-color: white;
- border-radius: 100%;
- border: none;
+.activar{
+    background-color: rgb(48, 62, 80);
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 20%;
+    padding: 5px;
+    color: white;
+    border: none;
 }
+
+.contenedor-centro {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      max-width: 600px;
+      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      display: none;
+      
+    }
+
+    .card h2 {
+      text-align: center;
+      font-size: 16px;
+      color: rgb(48, 62, 80);
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 10px;
+      color: rgb(73, 84, 106);
+    }
+
+    .card p {
+      margin-top: 20px;
+      color: rgb(73, 84, 106);
+    }
+
+    .card2 {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      max-width: 800px;
+      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      display: none;
+      
+    }
+
+    .card2 h2 {
+      text-align: center;
+      font-size: 16px;
+      color: rgb(48, 62, 80);
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card2 ul {
+      padding-left: 20px;
+    }
+
+    .card2 li {
+      margin-bottom: 10px;
+      color: rgb(73, 84, 106);
+    }
+
+    .card2 p {
+      margin-top: 20px;
+      color: rgb(73, 84, 106);
+    }
+
+    .fondo-oscuro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 5;
+    }
