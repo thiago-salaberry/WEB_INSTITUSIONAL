@@ -1,159 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Especialidades - Técnica N° 1 de Vicente López</title>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/especialidades.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/especialidades.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 </head>
+
 <body>
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar-container">
-            <!-- Logo con dropdown de redes sociales -->
+            <!-- Logo con menú de redes sociales -->
             <div class="logo-container">
-                <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
+                <a href="../index.html">
+                    <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn" />
+                </a>
                 <div class="social-dropdown" id="socialDropdown">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-youtube"></i>
-                        <span>YouTube</span>
-                    </a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i><span>YouTube</span></a>
                 </div>
             </div>
 
+            <!-- Botón hamburguesa -->
+            <button class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <!-- Menú principal -->
             <nav class="main-menu">
-                <a href="../index.html" class="menu-btn" data-section="inicio">
-                    <span>Inicio</span>
-                </a>
-                <a href="autoridades.html" class="menu-btn" data-section="autoridades">
-                    <span>Autoridades</span>
-                </a>
-                <a href="especialidades.html" class="menu-btn" data-section="especialidades">
-                    <span>Especialidades</span>
-                </a>
-                <a href="inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">
-                    <span>Inscripciones 2026</span>
-                </a>
+                <a href="../index.html" class="menu-btn"><span>Inicio</span></a>
+                <a href="autoridades.html" class="menu-btn"><span>Autoridades</span></a>
+                <a href="especialidades.html" class="menu-btn"><span>Especialidades</span></a>
+                <a href="inscripciones.html" class="menu-btn inscripciones-btn"><span>Inscripciones 2026</span></a>
             </nav>
         </div>
     </header>
-    
-    <main>
+
+    <!-- Menú móvil -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMobileMenu" aria-label="Cerrar menú">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#inicio" class="menu-btn" data-section="inicio">Inicio</a>
+        <a href="html/autoridades.html" class="menu-btn" data-section="autoridades">Autoridades</a>
+        <a href="html/especialidades.html" class="menu-btn" data-section="especialidades">Especialidades</a>
+        <a href="html/inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">Inscripciones
+            2026</a>
+        <div class="mobile-social">
+            <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Overlay para cerrar menú -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main style="margin-top: 100px;">
         <section class="titulos">
             <div class="cont_title">
                 <h1 class="titulo">Especialidades Técnicas</h1>
             </div>
             <div class="cont_title">
-                <h2 class="sub-titulo">Formación profecional de calidad en las áreas tecnológicas más demandadas <br> del mercado laboral</h2>
+                <h2 class="sub-titulo">
+                    Formación profesional de calidad en las áreas tecnológicas más demandadas <br>
+                    del mercado laboral
+                </h2>
             </div>
         </section>
 
         <section class="cont_esp">
+            <!-- PROGRAMACIÓN -->
             <div class="cont_especialidades">
                 <div class="orden">
-                    <div class="cuadrito">
-                        <i class="bi bi-braces"></i>
-                    </div>
+                    <div class="cuadrito"><i class="bi bi-braces"></i></div>
                     <div>
                         <h2 class="titulo_esp">Programación</h2>
                         <p class="acompaña">Descargar diseño curricular</p>
                     </div>
                 </div>
-                <hr class="linea-divisoria">
+                <hr class="linea-divisoria" />
 
                 <div>
-                    <div>
-                        <p class="texto">Formamos desarrolladores de software con sólidos <br> conocimientos en algoritmia, estructuras de datos y <br>metodologías de desarrollo, preparados para enfrentar los <br>desafíos tecnológicos actuales.</p>
-                    </div>
-                    <div>
-                        <img id="ejemplo" src="../img/ejemplo.png" alt="Ejemplo_de_codigo">
-                    </div>
+                    <p class="texto">
+                        Formamos desarrolladores de software con sólidos <br>
+                        conocimientos en algoritmia, estructuras de datos y <br>
+                        metodologías de desarrollo, preparados para enfrentar los <br>
+                        desafíos tecnológicos actuales.
+                    </p>
+                    <img id="ejemplo" src="../img/ejemplo.png" alt="Ejemplo_de_codigo" />
                     <div class="cont_icon">
-                        <button class="activar">Diseño Currircular</button>
-                        <button onclick="mostrarCuadro()" class="activar">Perfil Tecnico</button>
+                        <button class="activar">Diseño Curricular</button>
+                        <button onclick="mostrarCuadro()" class="activar">Perfil Técnico</button>
                     </div>
                 </div>
             </div>
 
+            <!-- ELECTRÓNICA -->
             <div class="cont_especialidades">
                 <div class="orden">
-                    <div class="cuadrito">
-                        <i class="bi bi-calculator"></i>
-                    </div>
+                    <div class="cuadrito"><i class="bi bi-calculator"></i></div>
                     <div>
-                        <h2 class="titulo_esp">Electronica</h2>
+                        <h2 class="titulo_esp">Electrónica</h2>
                         <p class="acompaña">Descargar diseño curricular</p>
                     </div>
                 </div>
-                <hr class="linea-divisoria">
+                <hr class="linea-divisoria" />
 
                 <div>
-                    <div>
-                        <p class="texto">Capacitamos técnicos especialistas en sistemas <br>electrónicos, automatización y control industrial, con <br> énfasis en el diseño, implementación y mantenimiento de <br> circuitos y sistemas embebidos.</p>
-                    </div>
-                    <div>
-                        <img class="ejemplo2" src="../img/ejemplo2.png" alt="Ejemplo_de_circuito">
-                    </div>
+                    <p class="texto">
+                        Capacitamos técnicos especialistas en sistemas <br>
+                        electrónicos, automatización y control industrial, con <br>
+                        énfasis en el diseño, implementación y mantenimiento de <br>
+                        circuitos y sistemas embebidos.
+                    </p>
+                    <img class="ejemplo2" src="../img/ejemplo2.png" alt="Ejemplo_de_circuito" />
                     <div class="cont_icon">
-                        <button class="activar">Diseño Currircular</button>
-                        <button onclick="mostrarCuadro2()" class="activar">Perfil Tecnico</button>
+                        <button class="activar">Diseño Curricular</button>
+                        <button onclick="mostrarCuadro2()" class="activar">Perfil Técnico</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- FONDOS Y CUADROS -->
         <div id="fondoOscuro" class="fondo-oscuro" onclick="cerrarCuadro()"></div>
 
+        <!-- Programación -->
         <div class="contenedor-centro">
             <div id="cuadro" class="card">
-                <h2>PERFIL TECNICO PROGRAMACION</h2>
+                <h2>PERFIL TÉCNICO PROGRAMACIÓN</h2>
                 <ul>
                     <li>Realizar programas o componentes de sistemas de computación.</li>
-                    <li>Diseño e implementación de Sitios WEB dinámicos y estáticos.</li>
+                    <li>Diseño e implementación de sitios web dinámicos y estáticos.</li>
                     <li>Diseño e implementación de sistemas de bases de datos.</li>
                     <li>Diseño e implementación de aplicaciones móviles y de escritorio.</li>
-                    <li>Interpretar especificaciones de diseño, documentar los productos.</li>
+                    <li>Interpretar especificaciones de diseño y documentar productos.</li>
                 </ul>
                 <p>
-                    Realizados, verificar los componentes programados, buscar causas de mal funcionamiento y corregir los programas o adaptarlos a cambios en las especificaciones – desarrollando las actividades descritas en el perfil profesional y cumpliendo con los criterios de realización establecidos para las mismas en el marco de un equipo de trabajo organizado por proyecto.
+                    Verificar componentes programados, buscar causas de mal funcionamiento y corregir los programas o
+                    adaptarlos a cambios en las especificaciones, en un equipo de trabajo organizado por proyecto.
                 </p>
             </div>
         </div>
-<!--Electronica-->
+
+        <!-- Electrónica -->
         <div class="contenedor-centro">
             <div id="cuadro2" class="card2">
-                <h2>PERFIL TECNICO ELECTRONICA</h2>
+                <h2>PERFIL TÉCNICO ELECTRÓNICA</h2>
                 <ul>
-                    <li>Proyectar, componentes y equipos de electrónica analógica y/o digital, con tecnología electrónica estándar y de baja o mediana complejidad.</li>
-                    <li>Realizar ensayos y mediciones eléctricas y electrónicas en dispositivos, componentes, equipos e instalaciones con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
-                    <li>Operar componentes, productos y equipos con electrónica analógica y/o digital.</li>
-                    <li>Realizar los mantenimientos, predictivo, preventivo, funcional operativo, y correctivo de componentes, productos y equipos con electrónica estándar, analógica y/o digital, de baja o mediana complejidad.</li>
-                    <li>Montar dispositivos y componentes con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
-                    <li>Instalar productos y equipos con electrónica analógica y/o digital.</li>
-                    <li>Realizar la selección, asesoramiento y comercialización de dispositivos, componentes, productos y equipos con electrónica analógica y/o digital, estándar de baja o mediana complejidad.</li>
-                    <li>Generar emprendimientos con electrónica analógica y/o digital de baja o mediana complejidad.</li>
+                    <li>Proyectar componentes y equipos de electrónica analógica y digital.</li>
+                    <li>Realizar ensayos y mediciones eléctricas y electrónicas.</li>
+                    <li>Operar componentes, productos y equipos electrónicos.</li>
+                    <li>Realizar mantenimientos preventivos, predictivos y correctivos.</li>
+                    <li>Montar dispositivos y componentes electrónicos.</li>
+                    <li>Instalar productos y equipos electrónicos.</li>
+                    <li>Seleccionar, asesorar y comercializar componentes electrónicos.</li>
+                    <li>Generar emprendimientos en el área electrónica.</li>
                 </ul>
             </div>
         </div>
-
     </main>
 
+    <!-- SCRIPTS -->
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/especialidades.js"></script>
 </body>
+
 </html>
