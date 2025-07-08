@@ -1,143 +1,357 @@
-body {
-    background-color: whitesmoke;
+/* ===========================================
+   ESPECIALIDADES - TÉCNICA N° 1 VICENTE LÓPEZ
+   Estilos para la página de especialidades técnicas
+   =========================================== */
+
+* {
+    box-sizing: border-box;
 }
 
-/* Sección de título */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================================
+   SECCIÓN DE TÍTULOS
+   =========================================== */
+.titulos {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    padding: 0 1rem;
+}
+
 .cont_title {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .titulo {
     font-size: 3.5rem;
     color: rgb(48, 65, 84);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    background: linear-gradient(45deg, rgb(48, 65, 84), rgb(70, 90, 120));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .sub-titulo {
     text-align: center;
     font-size: 1.2rem;
+    color: rgb(73, 84, 106);
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
-/* Sección de especialidades */
+/* ===========================================
+   SECCIÓN DE ESPECIALIDADES
+   =========================================== */
+.cont_esp {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
 .cont_especialidades {
-    width: max-content;
-    height: max-content;
-    background-color: white;
-    border-radius: 20%;
-    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        0 1px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cont_especialidades:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orden {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cuadrito {
-    border-radius: 20%;
-    height: 7vh;
-    font-size: 2.5rem;
-    background-color: whitesmoke;
+    border-radius: 15px;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    background: linear-gradient(145deg, rgb(48, 65, 84), rgb(70, 90, 120));
     display: flex;
     align-items: center;
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    color: rgb(48, 65, 84);
+    justify-content: center;
+    color: white;
+    box-shadow: 
+        0 4px 15px rgba(48, 65, 84, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.cuadrito:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 6px 20px rgba(48, 65, 84, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .titulo_esp {
     font-size: 2rem;
     color: rgb(48, 65, 84);
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
 }
 
-.orden {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    position: relative;
-    left: 25px;
-}
-
-.cont_esp {
-    margin: 10px;
-    display: flex;
-    justify-content: space-around;
+.acompaña {
+    color: rgb(120, 130, 150);
+    font-size: 0.9rem;
+    margin: 0;
+    font-style: italic;
 }
 
 .linea-divisoria {
     border: none;
-    height: 1px;
-    background-color: #e0e0e0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(48, 65, 84), transparent);
     width: 90%;
-    margin: 16px auto 0 auto;
+    margin: 1.5rem auto;
+    opacity: 0.3;
 }
 
 .texto {
-    color: rgb(48, 65, 84);
+    color: rgb(73, 84, 106);
     font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+#ejemplo, .ejemplo2 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 1rem auto;
+    display: block;
+}
+
+#ejemplo:hover, .ejemplo2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .cont_icon {
     display: flex;
     justify-content: center;
-    margin: 10px;
-}
-
-.ejemplo2 {
-    width: 25rem;
-    margin-left: 20px;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .activar {
-    background-color: rgb(48, 62, 80);
-    font-size: 1.5rem;
-    margin: 10px;
-    border-radius: 20%;
-    padding: 5px;
+    background: linear-gradient(145deg, rgb(48, 62, 80), rgb(70, 85, 105));
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
     color: white;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 
+        0 4px 15px rgba(48, 62, 80, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
 }
 
-/* MODAL */
+.activar:hover {
+    background: linear-gradient(145deg, rgb(70, 85, 105), rgb(48, 62, 80));
+    transform: translateY(-2px);
+    box-shadow: 
+        0 6px 20px rgba(48, 62, 80, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
 
+.activar:active {
+    transform: translateY(0);
+    box-shadow: 
+        0 2px 10px rgba(48, 62, 80, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================================
+   MODALES / VENTANAS EMERGENTES
+   =========================================== */
 .contenedor-centro {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+    display: none;
 }
 
 .card, .card2 {
-    background-color: white;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    max-width: 90vw;
-    max-height: 90vh;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 10px 25px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    padding: 2.5rem;
+    width: 90vw;
+    max-width: 600px;
+    max-height: 80vh;
     overflow-y: auto;
     line-height: 1.6;
-    font-family: Arial, sans-serif;
-    display: none;
-    z-index: 9999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Botón de cerrar visible */
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 1.8rem;
+    color: rgb(120, 130, 150);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 10001;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.modal-close-btn:hover {
+    color: rgb(220, 53, 69);
+    background: rgba(220, 53, 69, 0.1);
+    transform: scale(1.1);
 }
 
 .card h2, .card2 h2 {
     text-align: center;
-    font-size: 16px;
-    color: rgb(48, 62, 80);
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 1.4rem;
+    background: linear-gradient(45deg, rgb(48, 62, 80), rgb(70, 85, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    /* Centrado perfecto compensando el botón de cerrar */
+    padding-right: 35px;
+    margin-right: -35px;
+    margin-left: 0;
+}
+
+.card h2::after, .card2 h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgb(48, 62, 80), rgb(70, 85, 105));
+    border-radius: 2px;
+    /* Ajuste para centrado perfecto con respecto al área visible del título */
+    margin-left: -17.5px;
 }
 
 .card ul, .card2 ul {
-    padding-left: 20px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1.5rem;
 }
 
 .card li, .card2 li {
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     color: rgb(73, 84, 106);
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+
+.card li::before, .card2 li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(48, 62, 80);
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.card li:hover::before, .card2 li:hover::before {
+    transform: translateX(3px);
+    color: rgb(70, 85, 105);
 }
 
 .card p, .card2 p {
-    margin-top: 20px;
+    margin-top: 1.5rem;
     color: rgb(73, 84, 106);
+    font-style: italic;
+    background: rgba(48, 62, 80, 0.05);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid rgb(48, 62, 80);
+}
+
+/* Scrollbar personalizada para los modales */
+.card::-webkit-scrollbar, .card2::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card::-webkit-scrollbar-track, .card2::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-thumb, .card2::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, rgb(48, 62, 80), rgb(70, 85, 105));
+    border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-thumb:hover, .card2::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(145deg, rgb(70, 85, 105), rgb(48, 62, 80));
 }
 
 /* Fondo oscuro detrás del modal */
@@ -147,92 +361,387 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
     display: none;
     z-index: 9990;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* MEDIA QUERIES */
+/* ===========================================
+   TECNOLOGÍAS GRID
+   =========================================== */
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(48, 65, 84, 0.05);
+    border-radius: 10px;
+}
 
-/* Tablets (menores a 992px) */
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tech-item i {
+    font-size: 1.5rem;
+    color: rgb(48, 65, 84);
+}
+
+.tech-item span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(73, 84, 106);
+}
+
+/* ===========================================
+   MODAL CONTENT ENHANCEMENTS
+   =========================================== */
+.modal-content h3 {
+    color: rgb(48, 65, 84);
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(48, 65, 84, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-tag {
+    background: linear-gradient(145deg, rgb(48, 65, 84), rgb(70, 85, 105));
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(48, 65, 84, 0.3);
+}
+
+.modal-footer {
+    background: rgba(48, 65, 84, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid rgb(48, 65, 84);
+}
+
+/* ===========================================
+   ICONOS EN BOTONES
+   =========================================== */
+.activar i {
+    margin-right: 0.5rem;
+}
+
+/* ===========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablets y pantallas medianas (menores a 992px) */
 @media screen and (max-width: 991px) {
+    .titulo {
+        font-size: 2.8rem;
+    }
+    
+    .sub-titulo {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
     .cont_esp {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
     }
 
     .cont_especialidades {
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 30px;
+        width: 100%;
+        max-width: 600px;
+        padding: 1.5rem;
     }
 
     .orden {
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        left: 0;
+        justify-content: flex-start;
+        gap: 1rem;
     }
 
     .cuadrito {
-        height: auto;
-        font-size: 2rem;
-        margin-right: 10px;
-        bottom: 0;
-        right: 0;
+        height: 50px;
+        width: 50px;
+        font-size: 1.5rem;
+    }
+
+    .titulo_esp {
+        font-size: 1.8rem;
     }
 
     .ejemplo2, #ejemplo {
-        width: 90%;
-        margin: 10px auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 1rem auto;
         display: block;
     }
 
     .cont_icon {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem;
     }
 
     .activar {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .card, .card2 {
+        padding: 2rem;
+        max-width: 95vw;
+        max-height: 85vh;
+        width: 95vw;
+    }
+
+    .card h2, .card2 h2 {
         font-size: 1.2rem;
-        padding: 8px 16px;
-        width: 80%;
-        border-radius: 10px;
+        padding-right: 45px; /* Espacio para el botón X */
+    }
+
+    .modal-close-btn {
+        top: 10px;
+        right: 15px;
+        width: 36px;
+        height: 36px;
+        font-size: 1.6rem;
     }
 }
 
 /* Móviles (menores a 576px) */
 @media screen and (max-width: 575px) {
     .titulo {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: center;
+        padding: 0 1rem;
     }
 
     .sub-titulo {
         font-size: 1rem;
-        padding: 0 15px;
+        padding: 0 1rem;
+        line-height: 1.4;
+    }
+
+    .cont_especialidades {
+        padding: 1.2rem;
+        margin: 0 0.5rem;
+    }
+
+    .orden {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .cuadrito {
+        height: 45px;
+        width: 45px;
+        font-size: 1.3rem;
+        margin: 0 auto;
     }
 
     .titulo_esp {
         font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .acompaña {
+        font-size: 0.8rem;
     }
 
     .texto {
         font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    .card, .card2 {
-        padding: 20px;
-        font-size: 0.9rem;
-    }
-
-    .card h2, .card2 h2 {
-        font-size: 14px;
+        text-align: left;
+        padding: 0 0.5rem;
     }
 
     .activar {
-        font-size: 1rem;
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        border-radius: 20px;
     }
 
+    .card, .card2 {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        max-width: 95vw;
+        max-height: 85vh;
+        width: 95vw;
+    }
+
+    .card h2, .card2 h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        padding-right: 32px;
+        margin-right: -32px;
+        margin-left: 0;
+    }
+
+    .modal-close-btn {
+        top: 8px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        font-size: 1.5rem;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card li, .card2 li {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+        padding-left: 1.5rem;
+    }
+
+    .card p, .card2 p {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Pantallas muy pequeñas (menores a 400px) */
+@media screen and (max-width: 399px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .sub-titulo {
+        font-size: 0.9rem;
+    }
+
+    .cont_especialidades {
+        padding: 1rem;
+    }
+
+    .titulo_esp {
+        font-size: 1.3rem;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+    }
+
+    .card, .card2 {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .card h2, .card2 h2 {
+        font-size: 1rem;
+        /* Centrado perfecto para móviles pequeños */
+        padding-right: 30px;
+        margin-right: -30px;
+        margin-left: 0;
+    }
+}
+
+/* Animaciones adicionales para dispositivos que las soporten */
+@media (prefers-reduced-motion: no-preference) {
+    .cont_especialidades {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .cont_especialidades:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Efectos hover solo para dispositivos que los soporten */
+@media (hover: hover) and (pointer: fine) {
+    .cont_especialidades:hover .cuadrito {
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* Computadoras de escritorio (mayor a 768px) */
+@media screen and (min-width: 769px) {
+    .card h2, .card2 h2 {
+        /* Centrado perfecto compensando el botón de cerrar en escritorio */
+        padding-right: 35px;
+        margin-right: -35px;
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+
+    .modal-close-btn {
+        top: 10px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets y dispositivos medianos (entre 400px y 768px) */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .card h2, .card2 h2 {
+        /* Centrado perfecto compensando el botón de cerrar en tabletas */
+        padding-right: 35px;
+        margin-right: -35px;
+        margin-left: 0;
+        font-size: 1.3rem;
+    }
+
+    .modal-close-btn {
+        top: 10px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 1.7rem;
+    }
 }
