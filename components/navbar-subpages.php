@@ -22,17 +22,6 @@
             <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
             <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
             <a href="#" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
-            <div class="mobile-social">
-                <a href="#" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
         </nav>
         <!-- Overlay para cerrar menú -->
         <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>

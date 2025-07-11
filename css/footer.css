@@ -33,6 +33,16 @@
     font-weight: 600;
 }
 
+.footer-section a{
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #2980b9;
+}
+
 .footer-section p {
     line-height: 1.6;
     margin-bottom: 10px;

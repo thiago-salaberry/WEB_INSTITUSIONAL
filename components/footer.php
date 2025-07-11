@@ -9,9 +9,15 @@
         
         <div class="footer-section">
             <h4>Contacto</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Villa Adelina, Vicente López</p>
-            <p><i class="fas fa-phone"></i> Teléfono: (011) XXXX-XXXX</p>
-            <p><i class="fas fa-envelope"></i> info@tecnica1vl.edu.ar</p>
+            <p>
+                <a href="https://maps.app.goo.gl/D7nhiSos6Hcxeoxo7"><i class="fas fa-map-marker-alt"></i>Cerrito 3966, B1606 Villa Adelina, Provincia de Buenos Aires</a>
+            </p>
+            <p>
+                <a href="tel:+540114735-0174"><i class="fas fa-phone"></i> Teléfono: (011) 4735-0174</a>
+            </p>
+            <p>
+                <a href="mailto:tecnica1vl@gmail.com"><i class="fas fa-envelope"></i> tecnica1vl@gmail.com</a>
+            </p>
         </div>
         
         <div class="footer-section">
@@ -24,9 +30,10 @@
         <div class="footer-section">
             <h4>Síguenos</h4>
             <div class="footer-social">
-                <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/tecnicauno.vicentelopez/" target="_blank" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tecnica1_vicente_lopez/" target="_blank" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@tecnica1vl" target="_blank" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://crmtec1vl.blogspot.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-blogger-b"></i></a>
             </div>
         </div>
     </div>
