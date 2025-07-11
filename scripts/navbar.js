@@ -5,22 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ========================================
-    // MENÚ DESPLEGABLE DEL LOGO (REDES SOCIALES)
-    // ========================================
-    const logoBtn = document.getElementById('logoBtn');
-    const socialDropdown = document.getElementById('socialDropdown');
-    
-    // Verificamos que los elementos existan antes de agregar eventos
-    if (logoBtn && socialDropdown) {
-        // Cerrar el menú desplegable cuando se hace clic fuera de él
-        document.addEventListener('click', function(e) {
-            if (!logoBtn.contains(e.target) && !socialDropdown.contains(e.target)) {
-                socialDropdown.classList.remove('show');
-            }
-        });
-    }
-    
-    // ========================================
     // ANIMACIONES Y EFECTOS DE LOS BOTONES DEL MENÚ
     // ========================================
     const menuButtons = document.querySelectorAll('.menu-btn');
@@ -115,45 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // FUNCIONALIDAD DE LOS ENLACES DE REDES SOCIALES
-    // ========================================
-    const socialLinks = document.querySelectorAll('.social-link');
-    
-    socialLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevenir navegación por defecto
-            
-            // Obtener el nombre de la plataforma social
-            const platform = this.querySelector('span').textContent;
-            console.log('Abriendo:', platform);
-            
-            // ENLACES REALES: Descomentar y configurar los enlaces reales
-            /*
-            switch(platform) {
-                case 'Facebook':
-                    window.open('https://facebook.com/tecnica1vicentelopez', '_blank');
-                    break;
-                case 'Instagram':
-                    window.open('https://instagram.com/tecnica1vl', '_blank');
-                    break;
-                case 'Twitter':
-                    window.open('https://twitter.com/tecnica1vl', '_blank');
-                    break;
-                case 'YouTube':
-                    window.open('https://youtube.com/tecnica1vl', '_blank');
-                    break;
-            }
-            */
-            
-            // EFECTO VISUAL: Animación de clic en el enlace
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 150);
-        });
-    });
-    
     // Mensaje de confirmación en consola
     console.log('🎓 Técnica N°1 de Vicente López - Barra de navegación cargada correctamente');
 
@@ -208,13 +153,6 @@ navbarStyle.textContent = `
             transform: scale(4);
             opacity: 0;
         }
-    }
-    
-    /* Clase para mostrar el menú desplegable */
-    .social-dropdown.show {
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: translateY(0) !important;
     }
     
     /* Configuración base para efectos en botones */

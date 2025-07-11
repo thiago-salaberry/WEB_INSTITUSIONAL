@@ -20,6 +20,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/especialidades.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     
@@ -28,49 +29,44 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <!-- Logo con menú de redes sociales -->
-            <div class="logo-container">
-                <a href="../index.html">
-                    <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn" />
-                </a>
-                <div class="social-dropdown" id="socialDropdown">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i><span>Instagram</span></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i><span>YouTube</span></a>
-                </div>
-            </div>
+    <!-- FONDO ANIMADO -->
+    <div class="animated-background">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
-            <!-- Botón hamburguesa -->
-            <button class="hamburger" id="hamburgerBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Menú principal -->
-            <nav class="main-menu">
-                <a href="../index.html" class="menu-btn"><span>Inicio</span></a>
-                <a href="autoridades.html" class="menu-btn"><span>Autoridades</span></a>
-                <a href="especialidades.html" class="menu-btn"><span>Especialidades</span></a>
-                <a href="inscripciones.html" class="menu-btn inscripciones-btn"><span>Inscripciones 2026</span></a>
-            </nav>
-        </div>
-    </header>
+    <?php include '../components/navbar-subpages.php'; ?>
 
     <!-- Menú móvil -->
     <nav class="mobile-menu" id="mobileMenu">
         <button class="close-btn" id="closeMobileMenu" aria-label="Cerrar menú">
             <i class="fas fa-times"></i>
         </button>
-        <a href="#inicio" class="menu-btn" data-section="inicio">Inicio</a>
-        <a href="html/autoridades.html" class="menu-btn" data-section="autoridades">Autoridades</a>
-        <a href="html/especialidades.html" class="menu-btn" data-section="especialidades">Especialidades</a>
-        <a href="html/inscripciones.html" class="menu-btn inscripciones-btn" data-section="inscripciones">Inscripciones
-            2026</a>
+        <a href="../index.php" class="menu-btn" data-section="inicio">Inicio</a>
+        <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
+        <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
+        <a href="inscripciones.php" class="menu-btn inscripciones-btn" data-section="inscripciones">Inscripciones 2026</a>
         <div class="mobile-social">
             <a href="#" class="social-link">
                 <i class="fab fa-facebook-f"></i>
@@ -298,6 +294,8 @@
             </div>
         </div>
     </main>
+
+    <?php include '../components/footer.php'; ?>
 
     <!-- SCRIPTS -->
     <script src="../scripts/navbar.js"></script>
