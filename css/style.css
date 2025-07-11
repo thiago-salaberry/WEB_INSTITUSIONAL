@@ -39,9 +39,81 @@
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
     opacity: 1;
     animation: aparecerDesdeAbajo 1s ease-out 0.4s both;
-    color: #FFD700;
+    color: #ffffff;
     letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+.school-subtitle:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.school-subtitle span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.school-subtitle span.space {
+    display: inline-block;
+    opacity: 0;
+    width: 0.3em;
+    pointer-events: none;
+}
+
+.school-subtitle.wave-active span {
+    animation: waveClick 0.6s ease-in-out;
+}
+
+.school-subtitle.wave-active span:nth-child(1) { animation-delay: 0s; }
+.school-subtitle.wave-active span:nth-child(2) { animation-delay: 0.05s; }
+.school-subtitle.wave-active span:nth-child(3) { animation-delay: 0.1s; }
+.school-subtitle.wave-active span:nth-child(4) { animation-delay: 0.15s; }
+.school-subtitle.wave-active span:nth-child(5) { animation-delay: 0.2s; }
+.school-subtitle.wave-active span:nth-child(6) { animation-delay: 0.25s; }
+.school-subtitle.wave-active span:nth-child(7) { animation-delay: 0.3s; }
+.school-subtitle.wave-active span:nth-child(8) { animation-delay: 0.35s; }
+.school-subtitle.wave-active span:nth-child(9) { animation-delay: 0.4s; }
+.school-subtitle.wave-active span:nth-child(10) { animation-delay: 0.45s; }
+.school-subtitle.wave-active span:nth-child(11) { animation-delay: 0.5s; }
+.school-subtitle.wave-active span:nth-child(12) { animation-delay: 0.55s; }
+.school-subtitle.wave-active span:nth-child(13) { animation-delay: 0.6s; }
+.school-subtitle.wave-active span:nth-child(14) { animation-delay: 0.65s; }
+.school-subtitle.wave-active span:nth-child(15) { animation-delay: 0.7s; }
+.school-subtitle.wave-active span:nth-child(16) { animation-delay: 0.75s; }
+.school-subtitle.wave-active span:nth-child(17) { animation-delay: 0.8s; }
+.school-subtitle.wave-active span:nth-child(18) { animation-delay: 0.85s; }
+.school-subtitle.wave-active span:nth-child(19) { animation-delay: 0.9s; }
+.school-subtitle.wave-active span:nth-child(20) { animation-delay: 0.95s; }
+.school-subtitle.wave-active span:nth-child(21) { animation-delay: 1s; }
+.school-subtitle.wave-active span:nth-child(22) { animation-delay: 1.05s; }
+.school-subtitle.wave-active span:nth-child(23) { animation-delay: 1.1s; }
+.school-subtitle.wave-active span:nth-child(24) { animation-delay: 1.15s; }
+.school-subtitle.wave-active span:nth-child(25) { animation-delay: 1.2s; }
+.school-subtitle.wave-active span:nth-child(26) { animation-delay: 1.25s; }
+.school-subtitle.wave-active span:nth-child(27) { animation-delay: 1.3s; }
+.school-subtitle.wave-active span:nth-child(28) { animation-delay: 1.35s; }
+.school-subtitle.wave-active span:nth-child(29) { animation-delay: 1.4s; }
+.school-subtitle.wave-active span:nth-child(30) { animation-delay: 1.45s; }
+.school-subtitle.wave-active span:nth-child(31) { animation-delay: 1.5s; }
+.school-subtitle.wave-active span:nth-child(32) { animation-delay: 1.55s; }
+.school-subtitle.wave-active span:nth-child(33) { animation-delay: 1.6s; }
+.school-subtitle.wave-active span:nth-child(34) { animation-delay: 1.65s; }
+.school-subtitle.wave-active span:nth-child(35) { animation-delay: 1.7s; }
+.school-subtitle.wave-active span:nth-child(36) { animation-delay: 1.75s; }
+.school-subtitle.wave-active span:nth-child(37) { animation-delay: 1.8s; }
+.school-subtitle.wave-active span:nth-child(38) { animation-delay: 1.85s; }
+.school-subtitle.wave-active span:nth-child(39) { animation-delay: 1.9s; }
 
 /* ========================================
    SECCIONES PARALLAX - ESTRUCTURA BASE
@@ -52,6 +124,9 @@
     position: relative;
     overflow: hidden;
     opacity: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 /* --- Mitad izquierda - Títulos --- */
@@ -60,7 +135,7 @@
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/historia.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -85,7 +160,7 @@
     font-weight: 500;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
     animation: aparecerDesdeAbajo 1s ease-out 0.4s both;
-    color: #FFD700;
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -100,19 +175,19 @@
     position: relative;
 }
 
-/* Gradiente progresivo de azul claro a #34495e en las tres secciones parallax */
 .first-parallax-right {
-    background: linear-gradient(#4fc3f7, #5faee3);
+    background: linear-gradient(#3c6faa, #446b8c);
 }
 .second-parallax-right {
-    background: linear-gradient(#5faee3, #446b8c);
+    background: linear-gradient(#446b8c, #3b5672);
 }
 .third-parallax-right {
-    background: linear-gradient(#446b8c, #34495e);
+    background: linear-gradient(#3b5672, #34495e);
 }
 
 .content-overlay {
-    max-width: 400px;
+    max-width: 90%;
+    width: 100%;
     color: white;
     animation: aparecerDesdeDerecha 1s ease-out 0.4s both;
 }
@@ -167,6 +242,15 @@
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes waveClick {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 
@@ -325,7 +409,7 @@
 #autoridades .parallax-left {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/historia.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -333,7 +417,7 @@
 #historia .parallax-left {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fundacion.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -341,7 +425,7 @@
 #actualidad .parallax-left {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/actualidad.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -359,7 +443,7 @@
     }
 
     .school-subtitle{
-        font-size:1rem ;
+        font-size:1.4rem ;
     }
 
     .section-title{
@@ -368,7 +452,7 @@
 
     .section-subtitle{
         font-size:1rem ;
-
+        display: none; /* Mantener oculto */
     }
 
     .content-overlay h3 {
@@ -394,44 +478,63 @@
     }
     
     .school-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     .parallax-section {
         flex-direction: column;
         height: auto;
         min-height: 100vh;
+        margin: 0;
+        gap: 0;
     }
     
     .parallax-left,
     .parallax-right {
         width: 100%;
         height: 50vh;
-        min-height: 400px;
+        min-height: 50vh;
+        margin: 0;
+        border: none;
     }
     
     .parallax-left {
         background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        padding: 30px 20px;
+        margin-bottom: 0;
+    }
+    
+    .parallax-right {
+        margin-top: 0;
     }
     
     .section-title {
         font-size: 2.8rem;
+        margin-bottom: 15px;
     }
     
     .section-subtitle {
         font-size: 1.1rem;
+        display: none; /* Mantener oculto */
     }
     
     .content-overlay {
         max-width: 100%;
+        width: 95%;
+        padding: 0 10px;
+        margin: 0 auto;
     }
     
     .content-overlay h3 {
         font-size: 1.8rem;
+        margin-bottom: 20px;
     }
     
     .content-overlay p {
         font-size: 1rem;
+        line-height: 1.6;
     }
 
     
@@ -442,10 +545,11 @@
     .school-name {
         font-size: 2.5rem;
         line-height: 1.2;
+        margin-bottom: 15px;
     }
     
     .school-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .hero-content {
@@ -454,40 +558,69 @@
     
     .parallax-section {
         flex-direction: column;
-        height: 600px;
-        min-height: unset;
+        height: 100vh;
+        min-height: 100vh;
+        margin: 0;
+        gap: 0;
     }
+    
     .parallax-left,
     .parallax-right {
         width: 100%;
-        height: 100%;
-        min-height: unset;
-        padding: 20px 10px;
+        height: 50vh;
+        min-height: 50vh;
+        padding: 25px 15px;
         align-items: center;
         justify-content: center;
+        margin: 0;
+        border: none;
     }
+    
+    .parallax-left {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        min-height: 50vh;
+        margin-bottom: 0;
+    }
+    
+    .parallax-right {
+        min-height: 50vh;
+        padding: 30px 20px;
+        margin-top: 0;
+    }
+    
     .content-overlay {
         max-width: 100%;
-        padding: 0;
+        width: 95%;
+        padding: 0 5px;
+        text-align: center;
+        margin: 0 auto;
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         line-height: 1.2;
+        margin-bottom: 15px;
     }
     
     .section-subtitle {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: none; /* Mantener oculto */
     }
     
     .content-overlay h3 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 20px;
+        line-height: 1.3;
     }
     
     .content-overlay p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 15px;
+        line-height: 1.5;
+        text-align: left;
     }
 }
 
@@ -495,29 +628,72 @@
 @media screen and (max-width: 320px) {
     .school-name {
         font-size: 2rem;
+        margin-bottom: 12px;
     }
     
     .school-subtitle {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    
+    .parallax-left,
+    .parallax-right {
+        min-height: 50vh;
+        padding: 20px 15px;
     }
     
     .section-title {
         font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+        display: none; /* Mantener oculto */
     }
     
     .content-overlay h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 18px;
     }
     
     .content-overlay p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
     }
 }
 
 /* Responsive para secciones parallax adicionales */
 @media screen and (max-width: 768px) {
     #historia .parallax-left,
+    #actualidad .parallax-left,
+    #autoridades .parallax-left {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Asegurar que las imágenes se vean completas en móviles */
+    #autoridades .parallax-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/historia.webp');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
+    #historia .parallax-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fundacion.webp');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
     #actualidad .parallax-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/actualidad.webp');
+        background-size: cover;
+        background-position: center center;
         background-attachment: scroll;
     }
 }

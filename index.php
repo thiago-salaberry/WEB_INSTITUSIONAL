@@ -18,7 +18,9 @@
         <section id="inicio" class="hero-section">
             <div class="hero-content">
                 <h1 class="school-name">Técnica N° 1 de Vicente López</h1>
-                <p class="school-subtitle">Formando el futuro técnico de Argentina</p>
+                <p class="school-subtitle" id="subtitle">
+                    <span>F</span><span>o</span><span>r</span><span>m</span><span>a</span><span>n</span><span>d</span><span>o</span><span class="space">_</span><span>e</span><span>l</span><span class="space">_</span><span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>o</span><span class="space">_</span><span>t</span><span>é</span><span>c</span><span>n</span><span>i</span><span>c</span><span>o</span><span class="space">_</span><span>d</span><span>e</span><span class="space">_</span><span>A</span><span>r</span><span>g</span><span>e</span><span>n</span><span>t</span><span>i</span><span>n</span><span>a</span>
+                </p>
             </div>
             <!-- Flecha para siguiente sección -->
             <div class="scroll-arrow" id="scrollArrow">

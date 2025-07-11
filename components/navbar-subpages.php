@@ -20,16 +20,14 @@
             <a href="../index.php" class="menu-btn" data-section="inicio">Inicio</a>
             <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
             <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
-            <a href="inscripciones.php" class="menu-btn inscripciones-btn" data-section="inscripciones">Inscripciones 2026</a>
+            <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
+            <a href="#" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
             <div class="mobile-social">
                 <a href="#" class="social-link">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" class="social-link">
                     <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-twitter"></i>
                 </a>
                 <a href="#" class="social-link">
                     <i class="fab fa-youtube"></i>
@@ -50,8 +48,11 @@
             <a href="especialidades.php" class="menu-btn" data-section="especialidades">
                 <span>Especialidades</span>
             </a>
-            <a href="inscripciones.php" class="menu-btn inscripciones-btn" data-section="inscripciones">
+            <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">
                 <span>Inscripciones 2026</span>
+            </a>
+            <a href="#" class="menu-btn moodle-btn" data-section="moodle">
+                <span>Moodle</span>
             </a>
         </nav>
     </div>

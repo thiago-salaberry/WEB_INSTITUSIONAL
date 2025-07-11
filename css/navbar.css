@@ -108,24 +108,24 @@ html, body {
     transform: translateY(0);
 }
 
-/* --- Botón especial "Inscripciones 2026" --- */
-.inscripciones-btn {
-    background: linear-gradient(45deg, #e74c3c, #c0392b);
+/* --- Botón especial "Moodle" --- */
+.moodle-btn {
+    background: linear-gradient(45deg, #ff7f00, #e66a00);
     color: white !important;
     border: none;
     font-weight: 700;
-    animation: pulso-brillo 2s infinite;
+    animation: pulso-brillo-naranja 2s infinite;
     position: relative;
     overflow: hidden;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 127, 0, 0.4);
 }
 
-.inscripciones-btn::before {
-    background: linear-gradient(45deg, #c0392b, #a93226);
+.moodle-btn::before {
+    background: linear-gradient(45deg, #e66a00, #cc5500);
 }
 
-.inscripciones-btn::after {
+.moodle-btn::after {
     content: '';
     position: absolute;
     top: -50%;
@@ -138,13 +138,13 @@ html, body {
     opacity: 0;
 }
 
-.inscripciones-btn:hover::after {
+.moodle-btn:hover::after {
     animation: destello 0.6s ease-in-out;
 }
 
-.inscripciones-btn:hover {
+.moodle-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+    box-shadow: 0 8px 25px rgba(255, 127, 0, 0.6);
 }
 
 /* ========================================
@@ -159,6 +159,18 @@ html, body {
     }
     100% { 
         box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4), 0 0 0 0 rgba(231, 76, 60, 0); 
+    }
+}
+
+@keyframes pulso-brillo-naranja {
+    0% { 
+        box-shadow: 0 6px 20px rgba(255, 127, 0, 0.4), 0 0 0 0 rgba(255, 127, 0, 0.7); 
+    }
+    70% { 
+        box-shadow: 0 6px 20px rgba(255, 127, 0, 0.4), 0 0 0 12px rgba(255, 127, 0, 0); 
+    }
+    100% { 
+        box-shadow: 0 6px 20px rgba(255, 127, 0, 0.4), 0 0 0 0 rgba(255, 127, 0, 0); 
     }
 }
 
@@ -313,8 +325,8 @@ html, body {
     background: none;
     box-shadow: none;
 }
-.mobile-menu .menu-btn.inscripciones-btn {
-    background: linear-gradient(45deg, #e74c3c, #c0392b);
+.mobile-menu .menu-btn.moodle-btn {
+    background: linear-gradient(45deg, #ff7f00, #e66a00);
     color: white !important;
     border-radius: 8px;
     text-align: center;

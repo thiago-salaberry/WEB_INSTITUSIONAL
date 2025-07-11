@@ -5,8 +5,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ========================================
-    // ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER)
+    // ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER) - DESHABILITADO
     // ========================================
+    // Comentado para eliminar el efecto de overlay en las secciones parallax
+    /*
     const observerOptions = {
         threshold: 0.3,        // Activar cuando el 30% del elemento sea visible
         rootMargin: '0px 0px -50px 0px'  // Margen inferior para activar antes
@@ -27,6 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
     sectionsToAnimate.forEach(section => {
         observer.observe(section);
     });
+    */
+    
+    // ========================================
+    // ANIMACIÓN DE OLA EN SUBTÍTULO AL HACER CLIC
+    // ========================================
+    const subtitle = document.getElementById('subtitle');
+    if (subtitle) {
+        subtitle.addEventListener('click', function() {
+            // Remover la clase si ya está activa
+            subtitle.classList.remove('wave-active');
+            
+            // Agregar la clase después de un pequeño delay para reiniciar la animación
+            setTimeout(() => {
+                subtitle.classList.add('wave-active');
+            }, 10);
+            
+            // Remover la clase después de que termine la animación
+            setTimeout(() => {
+                subtitle.classList.remove('wave-active');
+            }, 2500);
+        });
+    }
     
     // ========================================
     // NAVEGACIÓN CON FLECHAS DE SCROLL
@@ -173,43 +197,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 800);
         }
     }
-
-    // ========================================
-    // NAVEGACIÓN CON RUEDA DEL MOUSE (WHEEL)
-    // ========================================
-    let wheelTimeout;
-    let isWheelScrolling = false;
-
-    // document.addEventListener('wheel', function(e) {
-    //     if (isWheelScrolling) return; // Prevenir navegación múltiple
-        
-    //     clearTimeout(wheelTimeout);
-    //     wheelTimeout = setTimeout(() => {
-    //         isWheelScrolling = true;
-            
-    //         if (e.deltaY > 0) {
-    //             // Scroll hacia abajo = siguiente sección
-    //             goToNextSection();
-    //         } else {
-    //             // Scroll hacia arriba = sección anterior
-    //             if (currentSectionIndex > 0) {
-    //                 currentSectionIndex--;
-    //                 const prevSection = document.getElementById(sections[currentSectionIndex]);
-    //                 if (prevSection) {
-    //                     prevSection.scrollIntoView({ 
-    //                         behavior: 'smooth',
-    //                         block: 'start'
-    //                     });
-    //                 }
-    //             }
-    //         }
-            
-    //         // Reactivar navegación con rueda después de un tiempo
-    //         setTimeout(() => {
-    //             isWheelScrolling = false;
-    //         }, 800);
-    //     }, 100);
-    // }, { passive: true });
     
     // ========================================
     // BOTÓN "VOLVER ARRIBA"
@@ -244,32 +231,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ========================================
-// ESTILOS DINÁMICOS PARA ANIMACIONES
+// ESTILOS DINÁMICOS PARA ANIMACIONES - SIMPLIFICADO
 // ========================================
 const indexStyle = document.createElement('style');
 indexStyle.textContent = `
-    /* Estado inicial de las secciones (ocultas) */
+    /* Las secciones parallax mantienen opacidad normal sin efectos de aparición */
     .parallax-section {
-        opacity: 0.9;
-        transition: all 0.8s ease;
-        transform: translateY(0);
-    }
-    
-    /* Estado cuando las secciones son visibles */
-    .parallax-section.animate-in {
         opacity: 1;
     }
     
-    /* Animaciones específicas para elementos dentro de las secciones */
-    .parallax-section.animate-in .section-title {
+    /* Las animaciones de texto se mantienen pero sin dependencia de .animate-in */
+    .section-title {
         animation: aparecerDesdeIzquierda 1s ease-out 0.2s both;
     }
     
-    .parallax-section.animate-in .section-subtitle {
-        animation: aparecerDesdeIzquierda 1s ease-out 0.4s both;
+    .section-subtitle {
+        animation: aparecerDesdeAbajo 1s ease-out 0.4s both;
     }
     
-    .parallax-section.animate-in .content-overlay {
+    .content-overlay {
         animation: aparecerDesdeDerecha 1s ease-out 0.6s both;
     }
 `;
