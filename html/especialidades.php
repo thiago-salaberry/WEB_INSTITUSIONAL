@@ -58,32 +58,6 @@
 
     <?php include '../components/navbar-subpages.php'; ?>
 
-    <!-- Menú móvil -->
-    <nav class="mobile-menu" id="mobileMenu">
-        <button class="close-btn" id="closeMobileMenu" aria-label="Cerrar menú">
-            <i class="fas fa-times"></i>
-        </button>
-        <a href="../index.php" class="menu-btn" data-section="inicio">Inicio</a>
-        <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
-        <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
-        <a href="inscripciones.php" class="menu-btn inscripciones-btn" data-section="inscripciones">Inscripciones 2026</a>
-        <div class="mobile-social">
-            <a href="#" class="social-link">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="social-link">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-    </nav>
-    <!-- Overlay para cerrar menú -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     <!-- CONTENIDO PRINCIPAL -->
     <main style="margin-top: 100px;" role="main">
         <section class="titulos" aria-labelledby="main-title">
