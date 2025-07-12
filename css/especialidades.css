@@ -42,7 +42,7 @@ body {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: linear-gradient(145deg, rgba(48, 65, 84, 0.058), rgba(70, 90, 120, 0.074));
+    background: rgba(70, 126, 255, 0.24);
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
