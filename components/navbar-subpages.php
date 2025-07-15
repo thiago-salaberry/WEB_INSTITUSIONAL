@@ -21,7 +21,7 @@
             <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
             <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
             <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
-            <a href="#" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
+            <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
         </nav>
         <!-- Overlay para cerrar menú -->
         <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
@@ -40,7 +40,7 @@
             <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">
                 <span>Inscripciones 2026</span>
             </a>
-            <a href="#" class="menu-btn moodle-btn" data-section="moodle">
+            <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">
                 <span>Moodle</span>
             </a>
         </nav>

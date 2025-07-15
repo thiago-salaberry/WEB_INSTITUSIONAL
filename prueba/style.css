@@ -214,50 +214,6 @@ body {
     animation-duration: 32s;
 }
 
-/* Efectos de resplandor */
-.glow-effects {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.glow {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(40px);
-    animation: glow-pulse 6s ease-in-out infinite;
-}
-
-.glow:nth-child(1) {
-    width: 350px;
-    height: 350px;
-    background: radial-gradient(circle, rgba(44, 90, 160, 0.1) 0%, transparent 70%);
-    top: 15%;
-    left: 8%;
-    animation-delay: 0s;
-}
-
-.glow:nth-child(2) {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(74, 144, 184, 0.08) 0%, transparent 70%);
-    top: 45%;
-    right: 8%;
-    animation-delay: -3s;
-}
-
-.glow:nth-child(3) {
-    width: 280px;
-    height: 280px;
-    background: radial-gradient(circle, rgba(107, 155, 216, 0.06) 0%, transparent 70%);
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-delay: -6s;
-}
 
 @keyframes gradient-shift {
     0%, 100% {
@@ -321,24 +277,5 @@ body {
     
     .wave-line {
         height: 2px;
-    }
-    
-    .glow {
-        filter: blur(20px);
-    }
-    
-    .glow:nth-child(1) {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .glow:nth-child(2) {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .glow:nth-child(3) {
-        width: 150px;
-        height: 150px;
     }
 }
