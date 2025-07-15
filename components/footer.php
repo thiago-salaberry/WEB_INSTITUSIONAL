@@ -16,7 +16,13 @@
                 <a href="tel:+540114735-0174"><i class="fas fa-phone"></i> Teléfono: (011) 4735-0174</a>
             </p>
             <p>
-                <a href="mailto:tecnica1vl@gmail.com"><i class="fas fa-envelope"></i> tecnica1vl@gmail.com</a>
+                <a href="mailto:eest1vtlopez@abc.gob.ar"><i class="fas fa-envelope"></i> eest1vtlopez@abc.gob.ar</a>
+            </p>
+            <p>
+                <a href="mailto:cooperadoraet1@gmail.com"><i class="fas fa-envelope"></i> cooperadoraet1@gmail.com</a>
+            </p>
+            <p>
+                <a href="mailto:inscripcion@tecnica1vl.org"><i class="fas fa-envelope"></i> inscripcion@tecnica1vl.org</a>
             </p>
         </div>
         
