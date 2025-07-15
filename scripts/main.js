@@ -5,33 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ========================================
-    // ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER) - DESHABILITADO
-    // ========================================
-    // Comentado para eliminar el efecto de overlay en las secciones parallax
-    /*
-    const observerOptions = {
-        threshold: 0.3,        // Activar cuando el 30% del elemento sea visible
-        rootMargin: '0px 0px -50px 0px'  // Margen inferior para activar antes
-    };
-
-    // Observer para detectar cuando las secciones entran en vista
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Agregar clase de animación cuando la sección sea visible
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-
-    // Aplicar el observer a todas las secciones parallax
-    const sectionsToAnimate = document.querySelectorAll('.parallax-section');
-    sectionsToAnimate.forEach(section => {
-        observer.observe(section);
-    });
-    */
-    
-    // ========================================
     // ANIMACIÓN DE OLA EN SUBTÍTULO AL HACER CLIC
     // ========================================
     const subtitle = document.getElementById('subtitle');
@@ -55,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // NAVEGACIÓN CON FLECHAS DE SCROLL
     // ========================================
-    const sections = ['inicio', 'autoridades', 'historia', 'actualidad', 'footer'];
+    const sections = ['inicio', 'historia', 'autoridades', 'asociacion', 'actualidad', 'footer'];
     let currentSectionIndex = 0; // Índice de la sección actual
 
     // Función para navegar a la siguiente sección

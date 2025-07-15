@@ -28,22 +28,23 @@
             </div>
         </section>
 
-        <!-- Segunda Sección Parallax -->
-        <section id="autoridades" class="parallax-section">
+        <!-- Segunda Sección Parallax - Historia -->
+        <section id="historia" class="parallax-section">
             <div class="parallax-left">
-                <h2 class="section-title">Nuestras Autoridades</h2>
-                <p class="section-subtitle">Liderazgo y experiencia educativa</p>
+                <h2 class="section-title">Nuestra Historia</h2>
+                <p class="section-subtitle">Comprometidos con la educación técnica desde nuestros inicios</p>
             </div>
             <div class="parallax-right first-parallax-right">
                 <div class="content-overlay">
-                    <h3>Equipo Directivo</h3>
+                    <h3>Fundación y Crecimiento</h3>
                     <p>
-                        El director de la escuela es el Prof. Ezequiel Torres y los vicedirectores 
-                        son Lic. Prof. Mariana Bonetti, Lic. Prof. Karin Cuervo y Prof. Daniel Segnini.
+                        El 16 de abril de 1984, la Escuela Técnica N°1 de Villa Adelina abrió sus puertas en un
+                        predio de 800 m², recibiendo a sus primeros 72 estudiantes.
                     </p>
                     <p>
-                        La Asociación Cooperadora, presente desde los inicios de la escuela, 
-                        ha desempeñado un rol esencial en el desarrollo y sostenimiento de la institución.
+                        La iniciativa fue impulsada por Ceferino Fernández, miembro del Club de Leones, con el
+                        apoyo de dicha organización. El edificio se construyó sobre terrenos donados por la señora
+                        Elisa Schulze de Ader y su hija, Ana Elisa Ader de Grünbaum.
                     </p>
                 </div>
             </div>
@@ -53,23 +54,21 @@
             </div>
         </section>
 
-        <!-- Tercera Sección Parallax - Historia -->
-        <section id="historia" class="parallax-section">
+        <!-- Tercera Sección Parallax - Autoridades -->
+        <section id="autoridades" class="parallax-section">
             <div class="parallax-left">
-                <h2 class="section-title">Nuestra Historia</h2>
-                <p class="section-subtitle">Desde 1984 formando técnicos</p>
+                <h2 class="section-title">Nuestras Autoridades</h2>
+                <p class="section-subtitle">Dirección con visión, responsabilidad y vocación</p>
             </div>
             <div class="parallax-right second-parallax-right">
                 <div class="content-overlay">
-                    <h3>Fundación y Crecimiento</h3>
+                    <h3>Equipo Directivo</h3>
                     <p>
-                        El 16 de abril de 1984, la escuela industrial de Villa Adelina abrió sus puertas 
-                        en un predio de 800 m², recibiendo a sus primeros 72 estudiantes.
-                    </p>
-                    <p>
-                        La idea surgió de Ceferino Fernández, miembro del Club de Leones, con el apoyo 
-                        del Club de Leones. El edificio fue construido sobre terrenos donados por la 
-                        señora Elisa Schulze de Ader y su hija Ana Elisa Ader de Grümbaum.
+                        Con vocación y compromiso el equipo directivo lidera el camino educativo de nuestra
+                        institución. Bajo la dirección del Prof. Ezequiel Torres, y con el acompañamiento de la Lic.
+                        Prof. Mariana Bonetti, la Lic. Prof. Karin Cuervo y el Prof. Daniel Segnini, se trabaja día a
+                        día para construir una escuela inclusiva, innovadora y comprometida con el futuro de cada
+                        estudiante.
                     </p>
                 </div>
             </div>
@@ -79,29 +78,49 @@
             </div>
         </section>
 
-        <!-- Cuarta Sección Parallax - Actualidad -->
-        <section id="actualidad" class="parallax-section">
+        <!-- Cuarta Sección Parallax - Asociación Cooperadora -->
+        <section id="asociacion" class="parallax-section">
             <div class="parallax-left">
-                <h2 class="section-title">Actualidad</h2>
-                <p class="section-subtitle">750 alumnos, 3 turnos, excelencia educativa</p>
+                <h2 class="section-title">Asociación Cooperadora</h2>
+                <p class="section-subtitle">Compromiso y colaboración comunitaria</p>
             </div>
             <div class="parallax-right third-parallax-right">
                 <div class="content-overlay">
-                    <h3>Nuestra Institución Hoy</h3>
+                    <h3>Apoyo Fundamental</h3>
                     <p>
-                        La Escuela de Educación Técnica N°1 "Eduardo Ader" ha crecido significativamente, 
-                        alcanzando una matrícula de aproximadamente 750 alumnos distribuidos en turnos 
-                        de mañana, tarde y vespertino.
-                    </p>
-                    <p>
-                        Cuenta con catorce divisiones de ciclo básico y once de ciclo superior secundario. 
-                        La institución dispone de 20 aulas en total, de las cuales 9 son para talleres 
-                        y materias de laboratorio.
+                        La Asociación Cooperadora ha cumplido un rol fundamental en el desarrollo y sostenimiento
+                        de la escuela, colaborando activamente en diversas áreas.
                     </p>
                 </div>
             </div>
             <!-- Flecha para siguiente sección -->
             <div class="scroll-arrow" id="scrollArrow4">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Quinta Sección Parallax - Actualidad -->
+        <section id="actualidad" class="parallax-section">
+            <div class="parallax-left">
+                <h2 class="section-title">Actualidad</h2>
+                <p class="section-subtitle">Formando nuestro futuro</p>
+            </div>
+            <div class="parallax-right fourth-parallax-right">
+                <div class="content-overlay">
+                    <h3>Nuestra Institución Hoy</h3>
+                    <p>
+                        La Escuela de Educación Técnica N.° 1 "Eduardo Ader" ha experimentado un importante
+                        crecimiento, alcanzando una matrícula aproximada de 750 estudiantes, distribuidos en
+                        turnos mañana, tarde y vespertino.
+                    </p>
+                    <p>
+                        Actualmente cuenta con 14 divisiones de ciclo básico y 11 de ciclo superior. Dispone de un
+                        total de 20 aulas, de las cuales 9 están destinadas a talleres y materias de laboratorio.
+                    </p>
+                </div>
+            </div>
+            <!-- Flecha para siguiente sección -->
+            <div class="scroll-arrow" id="scrollArrow5">
                 <i class="fas fa-chevron-down"></i>
             </div>
         </section>

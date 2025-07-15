@@ -184,6 +184,9 @@
 .third-parallax-right {
     background: linear-gradient(#3b5672, #34495e);
 }
+.fourth-parallax-right {
+    background: linear-gradient(#34495e, #34495e);
+}
 
 .content-overlay {
     max-width: 90%;
@@ -405,6 +408,14 @@
    SECCIONES PARALLAX ESPECÍFICAS
 ======================================== */
 
+/* Sección Historia */
+#historia .parallax-left {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fundacion.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 /* Sección Autoridades */
 #autoridades .parallax-left {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/historia.webp');
@@ -413,9 +424,9 @@
     background-attachment: fixed;
 }
 
-/* Sección Historia */
-#historia .parallax-left {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fundacion.webp');
+/* Sección Asociación Cooperadora */
+#asociacion .parallax-left {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/coperadora.webp');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -666,8 +677,9 @@
 /* Responsive para secciones parallax adicionales */
 @media screen and (max-width: 768px) {
     #historia .parallax-left,
-    #actualidad .parallax-left,
-    #autoridades .parallax-left {
+    #autoridades .parallax-left,
+    #asociacion .parallax-left,
+    #actualidad .parallax-left {
         background-attachment: scroll;
         background-size: cover;
         background-position: center center;
@@ -676,6 +688,13 @@
 
 @media screen and (max-width: 480px) {
     /* Asegurar que las imágenes se vean completas en móviles */
+    #historia .parallax-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fundacion.webp');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
     #autoridades .parallax-left {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/historia.webp');
         background-size: cover;
@@ -683,8 +702,8 @@
         background-attachment: scroll;
     }
 
-    #historia .parallax-left {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fundacion.webp');
+    #asociacion .parallax-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/escuela.webp');
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;
