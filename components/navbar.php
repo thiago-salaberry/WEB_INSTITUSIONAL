@@ -16,9 +16,9 @@
                 <i class="fas fa-times"></i>
             </button>
             <a href="#inicio" class="menu-btn" data-section="inicio">Inicio</a>
-            <a href="html/autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
-            <a href="html/especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
-            <a href="html/inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
+            <a href="pages/autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
+            <a href="pages/especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
+            <a href="pages/inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
             <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
         </nav>
         <!-- Overlay para cerrar menú -->
@@ -29,13 +29,13 @@
             <a href="#inicio" class="menu-btn" data-section="inicio">
                 <span>Inicio</span>
             </a>
-            <a href="html/autoridades.php" class="menu-btn" data-section="autoridades">
+            <a href="pages/autoridades.php" class="menu-btn" data-section="autoridades">
                 <span>Autoridades</span>
             </a>
-            <a href="html/especialidades.php" class="menu-btn" data-section="especialidades">
+            <a href="pages/especialidades.php" class="menu-btn" data-section="especialidades">
                 <span>Especialidades</span>
             </a>
-            <a href="html/inscripciones.php" class="menu-btn" data-section="inscripciones">
+            <a href="pages/inscripciones.php" class="menu-btn" data-section="inscripciones">
                 <span>Inscripciones 2026</span>
             </a>
             <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">
