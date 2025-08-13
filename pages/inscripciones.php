@@ -12,55 +12,7 @@
 </head>
 <body>
 
-    <!-- <?php include '../components/navbar-subpages.php'; ?> -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <!-- Logo -->
-            <div class="logo-container">
-                <a href="../index.php">
-                    <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
-                </a>
-            </div>
-            <!-- Botón hamburguesa (solo visible en mobile) -->
-            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Menú móvil lateral -->
-            <nav class="mobile-menu" id="mobileMenu">
-                <button class="close-btn" id="closeMobileMenu" aria-label="Cerrar menú">
-                    <i class="fas fa-times"></i>
-                </button>
-                <a href="../index.php" class="menu-btn" data-section="inicio">Inicio</a>
-                <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
-                <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
-                <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
-                <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
-            </nav>
-            <!-- Overlay para cerrar menú -->
-            <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-    
-            <!-- Menú principal -->
-            <nav class="main-menu">
-                <a href="../index.php" class="menu-btn" data-section="inicio">
-                    <span>Inicio</span>
-                </a>
-                <a href="autoridades.php" class="menu-btn" data-section="autoridades">
-                    <span>Autoridades</span>
-                </a>
-                <a href="especialidades.php" class="menu-btn" data-section="especialidades">
-                    <span>Especialidades</span>
-                </a>
-                <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">
-                    <span>Inscripciones 2026</span>
-                </a>
-                <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">
-                    <span>Moodle</span>
-                </a>
-            </nav>
-        </div>
-    </header>
+    <?php include '../components/navbar-subpages.php'; ?>
     
     <div class="main-insc-area">
         <div class="cont_title">
@@ -153,63 +105,7 @@
             </section>
         </div>
     </div>
-    <!-- <?php include '../components/footer.php'; ?> -->
-     <!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>Escuela de Educación Técnica N°1</h3>
-            <h4>"Eduardo Ader"</h4>
-            <p>Formando el futuro técnico de Argentina desde 1984</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Contacto</h4>
-            <p>
-                <a href="https://maps.app.goo.gl/D7nhiSos6Hcxeoxo7"><i class="fas fa-map-marker-alt"></i>Cerrito 3966, B1606 Villa Adelina, Provincia de Buenos Aires</a>
-            </p>
-            <p>
-                <a href="tel:+540114735-0174"><i class="fas fa-phone"></i> Teléfono: (011) 4735-0174</a>
-            </p>
-            <p>
-                <a href="mailto:eest1vtlopez@abc.gob.ar"><i class="fas fa-envelope"></i> eest1vtlopez@abc.gob.ar</a>
-            </p>
-            <p>
-                <a href="mailto:cooperadoraet1@gmail.com"><i class="fas fa-envelope"></i> cooperadoraet1@gmail.com</a>
-            </p>
-            <p>
-                <a href="mailto:inscripcion@tecnica1vl.org"><i class="fas fa-envelope"></i> inscripcion@tecnica1vl.org</a>
-            </p>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Valores Institucionales</h4>
-            <p>Responsabilidad, respeto y solidaridad</p>
-            <p>Educación técnica de calidad</p>
-            <p>Formación integral de estudiantes</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4>Síguenos</h4>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/tecnicauno.vicentelopez/" target="_blank" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/tecnica1_vicente_lopez/" target="_blank" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@tecnica1vl" target="_blank" class="footer-social-link"><i class="fab fa-youtube"></i></a>
-                <a href="https://crmtec1vl.blogspot.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-blogger-b"></i></a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2025 Escuela de Educación Técnica N°1 "Eduardo Ader". Todos los derechos reservados.</p>
-        <p>Desarrollado con dedicación para la comunidad educativa de Vicente López</p>
-        
-        <!-- Botón para volver arriba -->
-        <div class="back-to-top" id="backToTop">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-    </div>
-</footer>
+    <?php include '../components/footer.php'; ?>
 
     <script src="../scripts/inscripciones.js"></script>
 </body>
