@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 * {
@@ -880,4 +881,888 @@ main {
     .autoridad:hover .foto-container img {
         transform: none;
     }
+=======
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ===========================================
+   FONDO ANIMADO COMO EL DE PRUEBA
+   =========================================== */
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Líneas onduladas que atraviesan toda la pantalla */
+.wave-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wave-line {
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    left: -10%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(44, 90, 160, 0.4) 25%, 
+        rgba(74, 144, 184, 0.6) 50%, 
+        rgba(107, 155, 216, 0.4) 75%, 
+        transparent 100%);
+    animation: wave-flow 12s linear infinite;
+    transform-origin: center;
+    border-radius: 50px;
+    filter: blur(0.5px);
+}
+
+.wave-line:nth-child(1) {
+    top: 10%;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+    transform: rotate(0.5deg);
+}
+
+.wave-line:nth-child(2) {
+    top: 25%;
+    animation-delay: -3s;
+    animation-duration: 7s;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(16, 112, 255, 0.4) 25%, 
+        rgba(60, 184, 255, 0.6) 50%, 
+        rgba(116, 176, 255, 0.4) 75%, 
+        transparent 100%);
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-0.3deg);
+}
+
+.wave-line:nth-child(3) {
+    top: 40%;
+    animation-delay: -6s;
+    animation-duration: 3s;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(44, 90, 160, 0.3) 25%, 
+        rgba(74, 144, 184, 0.4) 50%, 
+        rgba(107, 155, 216, 0.3) 75%, 
+        transparent 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+    transform: rotate(0.7deg);
+}
+
+.wave-line:nth-child(4) {
+    top: 55%;
+    animation-delay: -9s;
+    animation-duration: 6s;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(16, 112, 255, 0.4) 25%, 
+        rgba(60, 184, 255, 0.6) 50%, 
+        rgba(116, 176, 255, 0.4) 75%,  
+        transparent 100%);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-0.4deg);
+}
+
+.wave-line:nth-child(5) {
+    top: 70%;
+    animation-delay: -12s;
+    animation-duration: 2s;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(74, 144, 184, 0.3) 25%, 
+        rgba(107, 155, 216, 0.5) 50%, 
+        rgba(44, 90, 160, 0.3) 75%, 
+        transparent 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+    transform: rotate(0.6deg);
+}
+
+.wave-line:nth-child(6) {
+    top: 85%;
+    animation-delay: -15s;
+    animation-duration: 7s;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(16, 112, 255, 0.4) 25%, 
+        rgba(60, 184, 255, 0.6) 50%, 
+        rgba(116, 176, 255, 0.4) 75%, 
+        transparent 100%);
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-0.2deg);
+}
+
+/* Partículas flotantes minimalistas */
+.floating-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(44, 90, 160, 0.6) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float-particle 25s linear infinite;
+}
+
+.particle:nth-child(1) {
+    width: 4px;
+    height: 4px;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 25s;
+}
+
+.particle:nth-child(2) {
+    width: 6px;
+    height: 6px;
+    left: 20%;
+    animation-delay: -5s;
+    animation-duration: 30s;
+}
+
+.particle:nth-child(3) {
+    width: 3px;
+    height: 3px;
+    left: 30%;
+    animation-delay: -10s;
+    animation-duration: 22s;
+}
+
+.particle:nth-child(4) {
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    animation-delay: -15s;
+    animation-duration: 28s;
+}
+
+.particle:nth-child(5) {
+    width: 4px;
+    height: 4px;
+    left: 70%;
+    animation-delay: -20s;
+    animation-duration: 26s;
+}
+
+.particle:nth-child(6) {
+    width: 7px;
+    height: 7px;
+    left: 80%;
+    animation-delay: -25s;
+    animation-duration: 24s;
+}
+
+.particle:nth-child(7) {
+    width: 3px;
+    height: 3px;
+    left: 90%;
+    animation-delay: -30s;
+    animation-duration: 32s;
+}
+
+@keyframes wave-flow {
+    0% {
+        transform: translateX(-100%) scaleY(1);
+    }
+    50% {
+        transform: translateX(0%) scaleY(1.5);
+    }
+    100% {
+        transform: translateX(100%) scaleY(1);
+    }
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(100vh) translateX(0px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(50px);
+        opacity: 0;
+    }
+}
+
+/* Main container */
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+}
+
+.main {
+    width: 90%;
+    max-width: 1400px;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+/* ===========================================
+   SECCIÓN DE TÍTULOS
+   =========================================== */
+.h1-cargo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 3rem 0 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.h1-cargo::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #2c5aa0 0%, #4a90b8 50%, #6b9bd8 100%);
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+/* Grid de autoridades - máximo 4 por fila, tamaño fijo */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1400px;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto 3rem auto;
+}
+
+/* Para pantallas grandes, máximo 4 columnas */
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Para tablets */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Para móviles */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Para móviles muy pequeños */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===========================================
+   CARDS DE AUTORIDADES
+   =========================================== */
+.autoridad {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        0 1px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.autoridad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.autoridad:hover::before {
+    left: 100%;
+}
+
+.autoridad:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.foto-container {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.foto-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid rgba(44, 90, 160, 0.2);
+    box-shadow: 0 8px 25px rgba(44, 90, 160, 0.2);
+    transition: all 0.3s ease;
+}
+
+.autoridad:hover .foto-container img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(44, 90, 160, 0.3);
+    border-color: rgba(44, 90, 160, 0.4);
+}
+
+.info-autoridad {
+    margin-top: 1rem;
+}
+
+.nombre-autoridad {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.cargo {
+    color: #7f8c8d;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===========================================
+   ANIMACIONES ESPECÍFICAS POR CATEGORÍA
+   =========================================== */
+
+/* Equipo Directivo - Slide from left (más suave) */
+.equipo-directivo .autoridad {
+    animation: slideInLeftSmooth 1.2s ease-out forwards;
+}
+
+.equipo-directivo .autoridad:nth-child(2) { animation-delay: 0.2s; }
+.equipo-directivo .autoridad:nth-child(3) { animation-delay: 0.4s; }
+.equipo-directivo .autoridad:nth-child(4) { animation-delay: 0.6s; }
+
+/* Secretaria - Fade in with scale (más suave) */
+.secretaria .autoridad {
+    animation: fadeInScaleSmooth 1.2s ease-out forwards;
+}
+
+.secretaria .autoridad:nth-child(2) { animation-delay: 0.2s; }
+.secretaria .autoridad:nth-child(3) { animation-delay: 0.4s; }
+
+/* Jefes de departamento - Slide from right (más suave) */
+.jefes-departamento .autoridad {
+    animation: slideInRightSmooth 1.2s ease-out forwards;
+}
+
+.jefes-departamento .autoridad:nth-child(2) { animation-delay: 0.2s; }
+.jefes-departamento .autoridad:nth-child(3) { animation-delay: 0.4s; }
+.jefes-departamento .autoridad:nth-child(4) { animation-delay: 0.6s; }
+.jefes-departamento .autoridad:nth-child(5) { animation-delay: 0.8s; }
+
+/* Preceptores - Bounce in (más suave) */
+.preceptores .autoridad {
+    animation: bounceInSmooth 1.2s ease-out forwards;
+}
+
+.preceptores .autoridad:nth-child(2) { animation-delay: 0.2s; }
+.preceptores .autoridad:nth-child(3) { animation-delay: 0.4s; }
+.preceptores .autoridad:nth-child(4) { animation-delay: 0.6s; }
+
+/* Auxiliares - Fade in up (más suave, reemplazar rotate) */
+.auxiliares .autoridad {
+    animation: fadeInUpSmooth 1.2s ease-out forwards;
+}
+
+.auxiliares .autoridad:nth-child(2) { animation-delay: 0.2s; }
+.auxiliares .autoridad:nth-child(3) { animation-delay: 0.4s; }
+.auxiliares .autoridad:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes slideInLeftSmooth {
+    from {
+        opacity: 0;
+        transform: translateX(-30px) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes slideInRightSmooth {
+    from {
+        opacity: 0;
+        transform: translateX(30px) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes fadeInScaleSmooth {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes bounceInSmooth {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.02) translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeInUpSmooth {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================================
+   MODAL MODERNO
+   =========================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.2);
+    animation: modalSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #2c5aa0 0%, #4a90b8 50%, #6b9bd8 100%);
+    color: white;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.modal-info-autoridad {
+    position: relative;
+    z-index: 2;
+}
+
+.modal-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.modal-cargo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: rgba(44, 90, 160, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.close:hover {
+    background: rgba(44, 90, 160, 0.5);
+    transform: scale(1.1) rotate(90deg);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.modal-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.modal-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.modal-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-info {
+    flex: 1;
+    min-width: 300px;
+    overflow-y: auto;
+}
+
+.modal-descripcion {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+/* ANIMACIONES DEL MODAL */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeOut {
+    from { 
+        opacity: 1; 
+    }
+    to { 
+        opacity: 0; 
+    }
+}
+
+@keyframes modalSlideIn {
+    from { 
+        transform: translateY(-50px) scale(0.9);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideOut {
+    from { 
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to { 
+        transform: translateY(-30px) scale(0.95);
+        opacity: 0;
+    }
+}
+
+/* Clases para animaciones de salida */
+.modal.fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+.modal-content.slide-out {
+    animation: modalSlideOut 0.3s ease-out forwards;
+}
+
+/* ===========================================
+   MEDIA QUERIES RESPONSIVE
+   =========================================== */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .h1-cargo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .modal-image,
+    .modal-info {
+        min-width: 100%;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 1rem;
+    }
+
+    .h1-cargo {
+        font-size: 2rem;
+    }
+
+    .autoridad {
+        padding: 1.5rem;
+    }
+
+    .foto-container img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 95%;
+        padding-top: 6rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .h1-cargo {
+        font-size: 1.8rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .autoridad {
+        padding: 1.5rem 1rem;
+    }
+
+    .foto-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nombre-autoridad {
+        font-size: 1.2rem;
+    }
+
+    .cargo {
+        font-size: 0.9rem;
+    }
+
+    .modal-header {
+        padding: 1.5rem;
+    }
+
+    .modal-name {
+        font-size: 1.6rem;
+    }
+
+    .modal-cargo {
+        font-size: 1rem;
+    }
+
+    .close {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .modal-descripcion {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 400px) {
+    .h1-cargo {
+        font-size: 1.5rem;
+    }
+
+    .autoridad {
+        padding: 1rem;
+    }
+
+    .foto-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nombre-autoridad {
+        font-size: 1.1rem;
+    }
+
+    .cargo {
+        font-size: 0.8rem;
+    }
+}
+
+/* Efectos para dispositivos que soporten hover */
+@media (hover: hover) and (pointer: fine) {
+    .autoridad:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .autoridad:hover .foto-container img {
+        transform: scale(1.05);
+    }
+}
+
+/* Reducir animaciones para usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    .autoridad,
+    .foto-container img,
+    .close,
+    .modal,
+    .modal-content {
+        animation: none;
+        transition: none;
+    }
+    
+    .autoridad:hover {
+        transform: none;
+    }
+    
+    .autoridad:hover .foto-container img {
+        transform: none;
+    }
+>>>>>>> 345ec85378862e6a52c7dd339d4da90c4c7a7a58
 }

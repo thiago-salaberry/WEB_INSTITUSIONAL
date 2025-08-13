@@ -80,7 +80,7 @@
                         <li>Matemática</li>
                         <li>Prácticas del lenguaje</li>
                     </ul>
-                    <ul class="subjects-list" id="subjects_3" style="display:none;">
+                    <ul class="subjects-list" id="subjects_3" style="display:none;"> 
                         <li>Lenguajes Tecnológicos III</li>
                         <li>Procedimientos Técnicos III</li>
                         <li>Sistemas Tecnológicos III</li>
