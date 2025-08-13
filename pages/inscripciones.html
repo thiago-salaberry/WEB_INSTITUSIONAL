@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones - Técnica N° 1 de Vicente López</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/inscripciones.css">
+</head>
+<body>
+
+    <!-- <?php include '../components/navbar-subpages.php'; ?> -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="../index.php">
+                    <img src="../img/logo.webp" alt="Logo Técnica N°1" class="logo" id="logoBtn">
+                </a>
+            </div>
+            <!-- Botón hamburguesa (solo visible en mobile) -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Menú móvil lateral -->
+            <nav class="mobile-menu" id="mobileMenu">
+                <button class="close-btn" id="closeMobileMenu" aria-label="Cerrar menú">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="../index.php" class="menu-btn" data-section="inicio">Inicio</a>
+                <a href="autoridades.php" class="menu-btn" data-section="autoridades">Autoridades</a>
+                <a href="especialidades.php" class="menu-btn" data-section="especialidades">Especialidades</a>
+                <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">Inscripciones 2026</a>
+                <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">Moodle</a>
+            </nav>
+            <!-- Overlay para cerrar menú -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+            <!-- Menú principal -->
+            <nav class="main-menu">
+                <a href="../index.php" class="menu-btn" data-section="inicio">
+                    <span>Inicio</span>
+                </a>
+                <a href="autoridades.php" class="menu-btn" data-section="autoridades">
+                    <span>Autoridades</span>
+                </a>
+                <a href="especialidades.php" class="menu-btn" data-section="especialidades">
+                    <span>Especialidades</span>
+                </a>
+                <a href="inscripciones.php" class="menu-btn" data-section="inscripciones">
+                    <span>Inscripciones 2026</span>
+                </a>
+                <a href="https://eest.tecnica1vl.org/" class="menu-btn moodle-btn" data-section="moodle">
+                    <span>Moodle</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main-insc-area">
+        <div class="cont_title">
+            <h1 class="titulo">Inscripciones 2026</h1>
+        </div>
+        <div class="cont_title">
+            <h2 class="sub-titulo">
+                Formación profesional de calidad en las áreas tecnológicas más demandadas del mercado laboral actual
+            </h2>
+        </div>
+        <div class="insc-panel">
+            <nav class="slide-nav">
+                <button class="slide-btn active"><i class="fa-solid fa-lightbulb"></i>¿Por qué inscribirse?</button>
+                <button class="slide-btn"><i class="fa-solid fa-clipboard-list"></i>¿Qué traer?</button>
+                <button class="slide-btn"><i class="fa-solid fa-book"></i>Materias C.B.</button>
+                <button class="slide-btn"><i class="fa-regular fa-calendar-check"></i>¿Cuándo abren?</button>
+            </nav>
+            <section id="slide_why" class="slide-section active">
+                <h2><i class="fa-solid fa-lightbulb"></i>Inscripciones 2026</h2>
+                <p>¿Te gusta resolver problemas y crear soluciones innovadoras? En nuestra escuela, contamos con los recursos necesarios para que puedas expresar tu creatividad. Tendrás acceso a computadoras, netbooks y herramientas de trabajo. Desde el primer día, estarás trabajando en proyectos, desde la creación de un horno solar, un semáforo con leds y de forma más avanzada la producción de circuitos electrónicos simples hasta aplicaciones web complejas. Esta experiencia te permitirá desarrollar habilidades clave como el pensamiento crítico, la resolución de problemas y el trabajo en equipo, preparándote para los desafíos del mundo profesional.</p>
+            </section>
+            <section id="slide_things" class="slide-section">
+                <h2><i class="fa-solid fa-clipboard-list"></i>¿Qué traer?</h2>
+                <ul class="requirements-list">
+                    <li>Constancia de 6to grado aprobado (que diga sin adeudar materias).</li>
+                    <li>Fotocopia de partida de nacimiento y de las vacunas aplicadas al alumno.</li>
+                    <li>Original y fotocopias del D.N.I. del alumno y de cada uno de los padres.</li>
+                    <li>Fotocopias del D.N.I. de personas autorizadas a retirar al alumno.</li>
+                    <li>2 fotos 4x4.</li>
+                    <li>Solicitud de inscripción con información de salud y Autorización de uso de imagen y personas autorizadas a retirar.</li>
+                    <li>1 Legajo. Se compra en la escuela, lo vende cooperadora en la fecha de inscripción.</li>
+                </ul>
+            </section>
+            <section id="slide_subjects" class="slide-section">
+                <h2><i class="fa-solid fa-book"></i>Materias ciclo básico</h2>
+                <div class="subjects-buttons-container">
+                    <button class="button_subjects active" data-grade="1">Primer año</button>
+                    <button class="button_subjects" data-grade="2">Segundo año</button>
+                    <button class="button_subjects" data-grade="3">Tercer año</button>
+                </div>
+                <div class="grade_subjects">
+                    <ul class="subjects-list" id="subjects_1">
+                        <li>Lenguajes Tecnológicos</li>
+                        <li>Procedimientos Técnicos</li>
+                        <li>Sistemas Tecnológicos</li>
+                        <li>Ciencias Naturales</li>
+                        <li>Ciencias Sociales</li>
+                        <li>Construcción Ciudadanía</li>
+                        <li>Educación Artística</li>
+                        <li>Educación Física</li>
+                        <li>Inglés</li>
+                        <li>Matemática</li>
+                        <li>Prácticas del lenguaje</li>
+                    </ul>
+                    <ul class="subjects-list" id="subjects_2" style="display:none;">
+                        <li>Lenguajes Tecnológicos II</li>
+                        <li>Procedimientos Técnicos II</li>
+                        <li>Sistemas Tecnológicos II</li>
+                        <li>Ciencias Naturales</li>
+                        <li>Ciencias Sociales</li>
+                        <li>Construcción Ciudadanía</li>
+                        <li>Educación Artística</li>
+                        <li>Educación Física</li>
+                        <li>Inglés</li>
+                        <li>Matemática</li>
+                        <li>Prácticas del lenguaje</li>
+                    </ul>
+                    <ul class="subjects-list" id="subjects_3" style="display:none;">
+                        <li>Lenguajes Tecnológicos III</li>
+                        <li>Procedimientos Técnicos III</li>
+                        <li>Sistemas Tecnológicos III</li>
+                        <li>Fisico-Química</li>
+                        <li>Biología</li>
+                        <li>Historia</li>
+                        <li>Construcción Ciudadanía</li>
+                        <li>Educación Artística</li>
+                        <li>Educación Física</li>
+                        <li>Inglés</li>
+                        <li>Matemática</li>
+                        <li>Prácticas del lenguaje</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="slide_when" class="slide-section">
+                <h2><i class="fa-regular fa-calendar-check"></i>¿Cuándo se abren las inscripciones?</h2>
+                <p>Las inscripciones se abren en el mes de Diciembre. Para inscribirse, es necesario llevar todo lo indicado en la sección "¿Qué traer?".<br>Además, en el mes de Noviembre se realiza la ExpoTécnica, una muestra de proyectos realizados durante el año. Es una excelente oportunidad para conocer el trabajo de nuestros estudiantes y vivir la experiencia técnica desde dentro.</p>
+                <div class="video-container">
+                    <iframe class="responsive-video" src="https://www.youtube.com/embed/L5iSNGRq_KE?si=sEWZxuuVfOtQzNWH" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- <?php include '../components/footer.php'; ?> -->
+     <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Escuela de Educación Técnica N°1</h3>
+            <h4>"Eduardo Ader"</h4>
+            <p>Formando el futuro técnico de Argentina desde 1984</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>
+                <a href="https://maps.app.goo.gl/D7nhiSos6Hcxeoxo7"><i class="fas fa-map-marker-alt"></i>Cerrito 3966, B1606 Villa Adelina, Provincia de Buenos Aires</a>
+            </p>
+            <p>
+                <a href="tel:+540114735-0174"><i class="fas fa-phone"></i> Teléfono: (011) 4735-0174</a>
+            </p>
+            <p>
+                <a href="mailto:eest1vtlopez@abc.gob.ar"><i class="fas fa-envelope"></i> eest1vtlopez@abc.gob.ar</a>
+            </p>
+            <p>
+                <a href="mailto:cooperadoraet1@gmail.com"><i class="fas fa-envelope"></i> cooperadoraet1@gmail.com</a>
+            </p>
+            <p>
+                <a href="mailto:inscripcion@tecnica1vl.org"><i class="fas fa-envelope"></i> inscripcion@tecnica1vl.org</a>
+            </p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Valores Institucionales</h4>
+            <p>Responsabilidad, respeto y solidaridad</p>
+            <p>Educación técnica de calidad</p>
+            <p>Formación integral de estudiantes</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/tecnicauno.vicentelopez/" target="_blank" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tecnica1_vicente_lopez/" target="_blank" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@tecnica1vl" target="_blank" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://crmtec1vl.blogspot.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-blogger-b"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Escuela de Educación Técnica N°1 "Eduardo Ader". Todos los derechos reservados.</p>
+        <p>Desarrollado con dedicación para la comunidad educativa de Vicente López</p>
+        
+        <!-- Botón para volver arriba -->
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+</footer>
+
+    <script src="../scripts/inscripciones.js"></script>
+</body>
+</html>
