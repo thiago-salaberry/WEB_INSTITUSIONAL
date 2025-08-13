@@ -36,10 +36,10 @@
         <div class="footer-section">
             <h4>Síguenos</h4>
             <div class="footer-social">
-                <a href="https://www.facebook.com/tecnicauno.vicentelopez/" target="_blank" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/tecnica1_vicente_lopez/" target="_blank" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@tecnica1vl" target="_blank" class="footer-social-link"><i class="fab fa-youtube"></i></a>
-                <a href="https://crmtec1vl.blogspot.com/" target="_blank" class="footer-social-link"><i class="fa-brands fa-blogger-b"></i></a>
+                <button class="footer-social-link" onclick="window.open('https://www.facebook.com/tecnicauno.vicentelopez/', '_blank')"><i class="fab fa-facebook-f"></i></button>
+                <button class="footer-social-link" onclick="window.open('https://www.instagram.com/tecnica1_vicente_lopez/', '_blank')"><i class="fab fa-instagram"></i></button>
+                <button class="footer-social-link" onclick="window.open('https://www.youtube.com/@tecnica1vl', '_blank')"><i class="fab fa-youtube"></i></button>
+                <button class="footer-social-link" onclick="window.open('https://crmtec1vl.blogspot.com/', '_blank')"><i class="fa-brands fa-blogger-b"></i></button>
             </div>
         </div>
     </div>

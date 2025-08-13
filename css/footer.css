@@ -4,7 +4,7 @@
 ======================================== */
 
 .footer {
-    background-color: #34495e;
+    background-color: #203041;
     color: white;
     padding: 60px 0 20px;
     margin-top: 0;
@@ -73,16 +73,27 @@
     border: 2px solid rgba(52, 152, 219, 0.3);
     border-radius: 50%;
     color: #3498db;
-    text-decoration: none;
-    transition: all 0.3s ease;
     font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-style: solid;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s, color 0.3s, box-shadow 0.3s;
+    /* Quitar estilos de botón por defecto */
+    border-width: 2px;
+    border-color: rgba(52, 152, 219, 0.3);
+    background-clip: padding-box;
 }
 
 .footer-social-link:hover {
     background: #3498db;
-    color: white;
+    color: rgb(255, 255, 255);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.footer-social-link:focus {
+    outline: 2px solid #2980b9;
+    outline-offset: 2px;
 }
 
 .footer-bottom {
