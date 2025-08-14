@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="../css/inscripciones.css">
 </head>
 <body>
+    <!-- Fondo animado de prueba -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
 
     <?php include '../components/navbar-subpages.php'; ?>
     
@@ -108,5 +112,6 @@
     <?php include '../components/footer.php'; ?>
 
     <script src="../scripts/inscripciones.js"></script>
+    <script src="../scripts/navbar.js"></script>
 </body>
 </html>

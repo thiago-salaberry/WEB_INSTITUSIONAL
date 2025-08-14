@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
     background: #f8f9fa;
 }
 body {
@@ -291,4 +290,37 @@ body {
 .slide-btn i {
   margin-right: 0.5em;
   vertical-align: middle;
+}
+
+/* ===========================================
+   FONDO ANIMADO DE PRUEBA
+   =========================================== */
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(220, 235, 255) 50%, rgba(70, 126, 255, 0.24) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
 }
