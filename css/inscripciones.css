@@ -5,6 +5,7 @@ html, body {
     min-height: 100vh;
     max-width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -274,22 +275,292 @@ body {
     font-weight: 700;
     text-shadow: none;
 }
+@media (max-width: 1200px) {
+    .titulo {
+        font-size: 3rem;
+    }
+    
+    .sub-titulo {
+        font-size: 1.1rem;
+        padding: 0 2rem;
+    }
+    
+    .insc-panel {
+        width: 95%;
+        max-width: 800px;
+    }
+}
+
 @media (max-width: 900px) {
-    .insc-panel { padding: 2rem 0.7rem; height: 550px; }
-    .slide-section h2 { font-size: 2rem; }
-    .slide-section p, .slide-section ul { font-size: 1.2rem; }
-    .slide-section li { font-size: 1rem; }
-    .slide-section .button_subjects { font-size: 1rem; }
-    .slide-btn { font-size: 0.9rem; padding: 0.7rem 1rem; }
-    .main-insc-area { margin-top: 60px; }
-    .titulo { font-size: 2.5rem; }
-    .sub-titulo { font-size: 1rem; }
-    #school-email { font-size: 1.1rem; }
+    .insc-panel { 
+        padding: 1.5rem 0.7rem; 
+        height: 550px; 
+        width: 95%;
+    }
+    
+    .slide-nav {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    
+    .slide-btn { 
+        font-size: 0.85rem; 
+        padding: 0.6rem 0.8rem; 
+        min-width: 150px;
+        height: 56px;
+    }
+    
+    .slide-section h2 { 
+        font-size: 2rem; 
+    }
+    
+    .slide-section p, .slide-section ul { 
+        font-size: 1.2rem; 
+    }
+    
+    .slide-section li { 
+        font-size: 1rem; 
+        padding: 0.5rem 1rem;
+    }
+    
+    .slide-section .button_subjects { 
+        font-size: 1rem; 
+        padding: 0.7rem 1rem;
+    }
+    
+    .main-insc-area { 
+        margin-top: 60px; 
+        padding: 20px 0;
+    }
+    
+    .titulo { 
+        font-size: 2.5rem; 
+    }
+    
+    .sub-titulo { 
+        font-size: 1rem; 
+        padding: 0 1.5rem;
+    }
+    
+    #school-email { 
+        font-size: 1.1rem; 
+        padding: 1.2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+    
+    .sub-titulo {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+    
+    .insc-panel {
+        width: 98%;
+        height: 500px;
+        padding: 1rem 0.5rem;
+        margin: 2rem auto 3rem auto;
+    }
+    
+    .slide-nav {
+        gap: 0.5rem;
+        margin: 1.5rem 0 2rem 0;
+    }
+    
+    .slide-btn {
+        font-size: 0.75rem;
+        min-width: 120px;
+        height: 50px;
+        padding: 0.5rem 0.6rem;
+        border-radius: 15px;
+    }
+    
+    .slide-section {
+        padding: 0 0.5rem;
+    }
+    
+    .slide-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .slide-section p, .slide-section ul {
+        font-size: 1.1rem;
+    }
+    
+    .slide-section li {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .subjects-buttons-container {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .slide-section .button_subjects {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .main-insc-area {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+    
+    .sub-titulo {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+    
+    .insc-panel {
+        width: 100%;
+        height: 480px;
+        border-radius: 20px;
+        padding: 0.8rem 0.3rem;
+        margin: 1.5rem auto 2rem auto;
+    }
+    
+    .slide-nav {
+        gap: 0.3rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+    
+    .slide-btn {
+        font-size: 0.7rem;
+        min-width: 100px;
+        height: 45px;
+        padding: 0.4rem 0.5rem;
+        border-radius: 12px;
+        gap: 0.5rem;
+    }
+    
+    .slide-section {
+        padding: 0 0.3rem;
+        margin-top: 0.5rem;
+    }
+    
+    .slide-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .slide-section p, .slide-section ul {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .slide-section li {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-align: left;
+    }
+    
+    .subjects-buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .slide-section .button_subjects {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.7rem;
+        width: 150px;
+    }
+    
+    .slide-section .video-container {
+        margin-top: 0.5rem;
+    }
+    
+    #school-email {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    .main-insc-area {
+        margin-top: 100px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo {
+        font-size: 1.6rem;
+    }
+    
+    .sub-titulo {
+        font-size: 0.85rem;
+    }
+    
+    .insc-panel {
+        height: 450px;
+        padding: 0.5rem 0.2rem;
+        border-radius: 15px;
+    }
+    
+    .slide-btn {
+        font-size: 0.65rem;
+        min-width: 85px;
+        height: 40px;
+        padding: 0.3rem 0.4rem;
+    }
+    
+    .slide-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .slide-section p, .slide-section ul {
+        font-size: 0.9rem;
+    }
+    
+    .slide-section li {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .slide-section .button_subjects {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+        width: 130px;
+    }
+    
+    #school-email {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
 }
 /* CSS para los íconos de los botones */
 .slide-btn i {
   margin-right: 0.5em;
   vertical-align: middle;
+}
+
+/* Responsive para íconos */
+@media (max-width: 576px) {
+    .slide-btn i {
+        margin-right: 0.3em;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 400px) {
+    .slide-btn i {
+        margin-right: 0.2em;
+        font-size: 0.8em;
+    }
 }
 
 /* ===========================================
