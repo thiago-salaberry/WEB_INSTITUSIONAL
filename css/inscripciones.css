@@ -3,11 +3,12 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    width: 100vw;
-    background: #f8f9fa;
+    /* evitar scroll horizontal */
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -21,8 +22,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100vw;
-    max-width: 100vw;
+    /* usar % en lugar de 100vw para evitar overflow por scrollbar */
+    width: 100%;
+    max-width: 100%;
     position: relative;
     z-index: 1;
     padding: 30px 0;
@@ -67,7 +69,8 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
     padding: 1rem;
     max-width: 900px;
-    width: 90vw;
+    /* usar % para adaptarse sin provocar overflow */
+    width: 90%;
     height: 650px;
     margin: 3rem auto 4rem auto;
     display: flex;
@@ -75,7 +78,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    border: 3px solid rgb(48, 62, 80);
     backdrop-filter: blur(10px);
     overflow-x: hidden;
 }
@@ -305,6 +307,7 @@ body {
     right: -50%;
     top: 0;
     z-index: -1;
+    pointer-events: none;
 }
 
 .bg2 {
