@@ -5,7 +5,7 @@
 
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/escuela.webp');
+    background: linear-gradient(rgba(0, 17, 255, 0.1), rgba(0, 6, 36, 0.1)), url('../img/escuela.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
