@@ -568,6 +568,10 @@
         padding: 0;
     }
     
+    .scroll-arrow {
+        display: none;
+    }
+    
     .parallax-section {
         flex-direction: column;
         height: 100vh;
