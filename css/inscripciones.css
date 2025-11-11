@@ -21,13 +21,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* usar % en lugar de 100vw para evitar overflow por scrollbar */
     width: 100%;
     max-width: 100%;
     position: relative;
     z-index: 1;
-    padding: 30px 0;
+    padding: 30px 20px;
     margin-top: 45px;
+    box-sizing: border-box;
 }
 .titulos {
     text-align: center;
@@ -50,6 +50,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 20px;
 }
 .sub-titulo {
     text-align: center;
@@ -58,6 +62,10 @@ body {
     font-weight: 400;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
 }
 .insc-panel {
     background: linear-gradient(145deg, #ffffff, #f8f9fa);
@@ -68,9 +76,9 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
     padding: 1rem;
     max-width: 900px;
-    /* usar % para adaptarse sin provocar overflow */
     width: 90%;
-    height: 650px;
+    min-height: 650px;
+    max-height: 90vh;
     margin: 3rem auto 4rem auto;
     display: flex;
     flex-direction: column;
@@ -79,19 +87,21 @@ body {
     position: relative;
     backdrop-filter: blur(10px);
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 .slide-nav {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 1.2rem;
     margin: 2rem 0 2.5rem 0;
-    padding: 0;
+    padding: 0 1rem;
     background: none;
     border-radius: 0;
     box-shadow: none;
     position: static;
+    box-sizing: border-box;
 }
 .slide-btn {
     background: linear-gradient(145deg, rgb(48, 62, 80), rgb(70, 85, 105));
@@ -114,7 +124,11 @@ body {
     position: relative;
     overflow: hidden;
     justify-content: center;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
+    word-wrap: break-word;
+    flex: 1 1 auto;
+    box-sizing: border-box;
 }
 .slide-btn::before {
     content: '';
@@ -149,9 +163,10 @@ body {
     animation: fadeIn 0.5s;
     margin-top: 1rem;
     padding: 0 1rem;
-    max-height: calc(100% - 120px);
+    max-height: calc(100% - 150px);
     overflow-y: auto;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 .slide-section.active {
     display: flex;
@@ -200,6 +215,11 @@ body {
     margin-bottom: 1.5rem;
     color: rgb(73, 84, 106);
     text-shadow: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    width: 100%;
+    box-sizing: border-box;
 }
 .slide-section ul {
     list-style: none;
@@ -210,10 +230,16 @@ body {
     background: rgba(48, 62, 80, 0.05);
     border-radius: 8px;
     padding: 0.6rem 1.2rem;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    max-width: 100%;
     color: rgb(73, 84, 106);
     font-size: 1.2rem;
     border-left: 4px solid rgb(48, 62, 80);
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 .slide-section .subjects-buttons-container {
     margin-bottom: 1rem;
@@ -276,8 +302,13 @@ body {
     text-shadow: none;
 }
 @media (max-width: 1200px) {
+    .main-insc-area {
+        padding: 25px 15px;
+    }
+    
     .titulo {
         font-size: 3rem;
+        padding: 0 15px;
     }
     
     .sub-titulo {
@@ -288,26 +319,40 @@ body {
     .insc-panel {
         width: 95%;
         max-width: 800px;
+        min-height: 600px;
+    }
+    
+    .slide-btn {
+        min-width: 160px;
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 900px) {
+    .main-insc-area { 
+        margin-top: 60px; 
+        padding: 20px 15px;
+    }
+    
     .insc-panel { 
         padding: 1.5rem 0.7rem; 
-        height: 550px; 
+        min-height: 550px;
+        max-height: 85vh;
         width: 95%;
     }
     
     .slide-nav {
         gap: 0.8rem;
         flex-wrap: wrap;
+        padding: 0 0.5rem;
     }
     
     .slide-btn { 
         font-size: 0.85rem; 
         padding: 0.6rem 0.8rem; 
-        min-width: 150px;
+        min-width: 140px;
         height: 56px;
+        flex: 1 1 calc(50% - 0.4rem);
     }
     
     .slide-section h2 { 
@@ -328,13 +373,9 @@ body {
         padding: 0.7rem 1rem;
     }
     
-    .main-insc-area { 
-        margin-top: 60px; 
-        padding: 20px 0;
-    }
-    
     .titulo { 
         font-size: 2.5rem; 
+        padding: 0 15px;
     }
     
     .sub-titulo { 
@@ -349,115 +390,173 @@ body {
 }
 
 @media (max-width: 768px) {
+    .main-insc-area {
+        margin-top: 80px;
+        padding: 15px 10px;
+    }
+    
     .titulo {
         font-size: 2.2rem;
         margin-top: 1rem;
+        padding: 0 10px;
+        line-height: 1.2;
     }
     
     .sub-titulo {
         font-size: 0.95rem;
         padding: 0 1rem;
+        line-height: 1.4;
     }
     
     .insc-panel {
         width: 98%;
-        height: 500px;
+        min-height: 500px;
+        max-height: 80vh;
         padding: 1rem 0.5rem;
         margin: 2rem auto 3rem auto;
+        border-radius: 24px;
     }
     
     .slide-nav {
         gap: 0.5rem;
         margin: 1.5rem 0 2rem 0;
+        padding: 0 0.3rem;
     }
     
     .slide-btn {
         font-size: 0.75rem;
-        min-width: 120px;
+        min-width: auto;
+        width: calc(50% - 0.25rem);
         height: 50px;
-        padding: 0.5rem 0.6rem;
+        padding: 0.5rem 0.5rem;
         border-radius: 15px;
+        flex: 1 1 calc(50% - 0.25rem);
     }
     
     .slide-section {
         padding: 0 0.5rem;
+        max-height: calc(100% - 140px);
     }
     
     .slide-section h2 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+    
+    .slide-section h2 i {
+        font-size: 0.9em;
     }
     
     .slide-section p, .slide-section ul {
         font-size: 1.1rem;
+        text-align: left;
     }
     
     .slide-section li {
         font-size: 0.95rem;
         padding: 0.4rem 0.8rem;
         margin-bottom: 0.6rem;
+        line-height: 1.5;
     }
     
     .subjects-buttons-container {
         flex-wrap: wrap;
         gap: 0.5rem;
+        width: 100%;
     }
     
     .slide-section .button_subjects {
         font-size: 0.9rem;
         padding: 0.6rem 0.8rem;
+        flex: 1 1 auto;
+        min-width: 120px;
     }
     
-    .main-insc-area {
-        margin-top: 80px;
+    .slide-section .video-container {
+        width: 100%;
+        margin-top: 1rem;
     }
 }
 
 @media (max-width: 576px) {
+    .main-insc-area {
+        margin-top: 100px;
+        padding: 15px 10px;
+    }
+    
+    .cont_title {
+        width: 100%;
+        padding: 0 5px;
+    }
+    
     .titulo {
         font-size: 1.8rem;
+        padding: 0 10px;
+        line-height: 1.2;
+        margin-top: 1rem;
     }
     
     .sub-titulo {
         font-size: 0.9rem;
         padding: 0 0.5rem;
+        line-height: 1.4;
     }
     
     .insc-panel {
         width: 100%;
-        height: 480px;
+        min-height: 480px;
+        max-height: 75vh;
         border-radius: 20px;
-        padding: 0.8rem 0.3rem;
+        padding: 0.8rem 0.5rem;
         margin: 1.5rem auto 2rem auto;
     }
     
     .slide-nav {
-        gap: 0.3rem;
+        gap: 0.4rem;
         margin: 1rem 0 1.5rem 0;
+        padding: 0 0.2rem;
+        flex-direction: column;
     }
     
     .slide-btn {
         font-size: 0.7rem;
-        min-width: 100px;
+        min-width: 100%;
+        width: 100%;
         height: 45px;
         padding: 0.4rem 0.5rem;
         border-radius: 12px;
         gap: 0.5rem;
+        flex: 1 1 auto;
+    }
+    
+    .slide-btn i {
+        font-size: 0.85em;
+        flex-shrink: 0;
     }
     
     .slide-section {
         padding: 0 0.3rem;
         margin-top: 0.5rem;
+        max-height: calc(100% - 180px);
     }
     
     .slide-section h2 {
         font-size: 1.5rem;
         margin-bottom: 0.8rem;
+        line-height: 1.3;
+        flex-wrap: wrap;
+    }
+    
+    .slide-section h2 i {
+        font-size: 0.85em;
     }
     
     .slide-section p, .slide-section ul {
         font-size: 1rem;
         margin-bottom: 1rem;
+        text-align: left;
+        width: 100%;
     }
     
     .slide-section li {
@@ -466,80 +565,128 @@ body {
         margin-bottom: 0.5rem;
         display: block;
         text-align: left;
+        line-height: 1.4;
     }
     
     .subjects-buttons-container {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 0.5rem;
+        width: 100%;
     }
     
     .slide-section .button_subjects {
         font-size: 0.85rem;
         padding: 0.5rem 0.7rem;
-        width: 150px;
+        width: 100%;
+        min-width: auto;
     }
     
     .slide-section .video-container {
         margin-top: 0.5rem;
+        width: 100%;
+    }
+    
+    .slide-section .responsive-video {
+        width: 100%;
+        height: auto;
     }
     
     #school-email {
         font-size: 1rem;
         padding: 1rem 1.2rem;
         margin-top: 1rem;
-    }
-    
-    .main-insc-area {
-        margin-top: 100px;
-        padding: 15px 0;
+        width: calc(100% - 2.4rem);
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 400px) {
+    .main-insc-area {
+        padding: 10px 5px;
+        margin-top: 90px;
+    }
+    
     .titulo {
         font-size: 1.6rem;
+        padding: 0 5px;
+        line-height: 1.2;
     }
     
     .sub-titulo {
         font-size: 0.85rem;
+        padding: 0 0.5rem;
+        line-height: 1.3;
     }
     
     .insc-panel {
-        height: 450px;
-        padding: 0.5rem 0.2rem;
+        min-height: 450px;
+        max-height: 70vh;
+        padding: 0.5rem 0.3rem;
         border-radius: 15px;
+        margin: 1rem auto 1.5rem auto;
+    }
+    
+    .slide-nav {
+        margin: 0.8rem 0 1.2rem 0;
+        gap: 0.3rem;
     }
     
     .slide-btn {
         font-size: 0.65rem;
-        min-width: 85px;
-        height: 40px;
+        min-width: 100%;
+        width: 100%;
+        height: 42px;
         padding: 0.3rem 0.4rem;
+        gap: 0.4rem;
+    }
+    
+    .slide-btn i {
+        font-size: 0.8em;
+    }
+    
+    .slide-section {
+        padding: 0 0.2rem;
+        max-height: calc(100% - 160px);
     }
     
     .slide-section h2 {
         font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.2;
+    }
+    
+    .slide-section h2 i {
+        font-size: 0.8em;
     }
     
     .slide-section p, .slide-section ul {
         font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+        text-align: left;
     }
     
     .slide-section li {
         font-size: 0.8rem;
         padding: 0.25rem 0.5rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
     }
     
     .slide-section .button_subjects {
         font-size: 0.8rem;
         padding: 0.4rem 0.6rem;
-        width: 130px;
+        width: 100%;
+    }
+    
+    .slide-section .video-container {
+        margin-top: 0.3rem;
     }
     
     #school-email {
         font-size: 0.9rem;
         padding: 0.8rem 1rem;
+        width: calc(100% - 2rem);
     }
 }
 /* CSS para los íconos de los botones */
@@ -553,6 +700,7 @@ body {
     .slide-btn i {
         margin-right: 0.3em;
         font-size: 0.9em;
+        flex-shrink: 0;
     }
 }
 
@@ -560,6 +708,7 @@ body {
     .slide-btn i {
         margin-right: 0.2em;
         font-size: 0.8em;
+        flex-shrink: 0;
     }
 }
 

@@ -31,6 +31,9 @@
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     letter-spacing: 2px;
     animation: aparecerDesdeAbajo 1s ease-out 0.2s both;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .school-subtitle {
@@ -50,6 +53,13 @@
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: manual;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .school-subtitle:hover {
@@ -60,8 +70,9 @@
 }
 
 .school-subtitle span {
-    display: inline-block;
+    display: inline;
     transition: transform 0.3s ease;
+    white-space: normal;
 }
 
 .school-subtitle span.space {
@@ -69,6 +80,13 @@
     opacity: 0;
     width: 0.3em;
     pointer-events: none;
+}
+
+/* Agrupar palabras juntas para evitar cortes */
+.school-subtitle {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .school-subtitle.wave-active span {
@@ -280,6 +298,13 @@
     animation: rebote-flecha 2s infinite;
 }
 
+/* Ocultar flechas en móviles */
+@media screen and (max-width: 768px) {
+    .scroll-arrow {
+        display: none !important;
+    }
+}
+
 .scroll-arrow:hover {
     transform: translateX(-50%) scale(1.1);
     background: rgba(255, 255, 255, 0.2);
@@ -479,10 +504,12 @@
 /* Tablets */
 @media screen and (max-width: 768px) {
 
+    #scrollArrow,
     #scrollArrow2,
     #scrollArrow3,
-    #scrollArrow4 {
-        display: none;
+    #scrollArrow4,
+    #scrollArrow5 {
+        display: none !important;
     }
     .school-name {
         font-size: 3rem;
@@ -490,6 +517,10 @@
     
     .school-subtitle {
         font-size: 1.4rem;
+        padding: 10px 15px;
+        max-width: 95%;
+        word-break: keep-all;
+        overflow-wrap: break-word;
     }
     
     .parallax-section {
@@ -553,18 +584,42 @@
 
 /* Móviles */
 @media screen and (max-width: 480px) {
+    #scrollArrow,
+    #scrollArrow2,
+    #scrollArrow3,
+    #scrollArrow4,
+    #scrollArrow5 {
+        display: none !important;
+    }
+
     .school-name {
         font-size: 2.5rem;
         line-height: 1.2;
         margin-bottom: 15px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 0 10px;
     }
     
     .school-subtitle {
         font-size: 1.1rem;
+        padding: 8px 12px;
+        max-width: 90%;
+        line-height: 1.4;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+    
+    .school-subtitle span:not(.space) {
+        white-space: normal;
+        display: inline;
     }
     
     .hero-content {
+        max-width: 100%;
+        width: 100%;
         padding: 0 15px;
+        box-sizing: border-box;
     }
     
     .parallax-section {
@@ -644,6 +699,11 @@
     
     .school-subtitle {
         font-size: 1rem;
+        padding: 8px 10px;
+        max-width: 90%;
+        line-height: 1.3;
+        word-break: keep-all;
+        overflow-wrap: break-word;
     }
     
     .parallax-left,
