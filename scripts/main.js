@@ -120,58 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateArrowVisibility();
 
     // ========================================
-    // NAVEGACIÓN TÁCTIL (SWIPE) PARA MÓVILES
-    // ========================================
-    let touchStartY = 0;    // Posición inicial del toque
-    let touchEndY = 0;      // Posición final del toque
-    let isScrolling = false; // Flag para prevenir múltiples navegaciones
-
-    // Detectar cuando el usuario comienza a tocar la pantalla
-    document.addEventListener('touchstart', function(e) {
-        touchStartY = e.touches[0].clientY;
-    }, { passive: true });
-
-    // Detectar cuando el usuario termina de tocar la pantalla
-    document.addEventListener('touchend', function(e) {
-        if (isScrolling) return; // Prevenir si ya estamos navegando
-        
-        touchEndY = e.changedTouches[0].clientY;
-        handleSwipe();
-    }, { passive: true });
-
-    // Procesar el gesto de swipe
-    function handleSwipe() {
-        const swipeDistance = touchStartY - touchEndY;
-        const minSwipeDistance = 50; // Distancia mínima para considerar un swipe válido
-        
-        if (Math.abs(swipeDistance) > minSwipeDistance) {
-            isScrolling = true;
-            
-            if (swipeDistance > 0) {
-                // Swipe hacia arriba = siguiente sección
-                goToNextSection();
-            } else {
-                // Swipe hacia abajo = sección anterior
-                if (currentSectionIndex > 0) {
-                    currentSectionIndex--;
-                    const prevSection = document.getElementById(sections[currentSectionIndex]);
-                    if (prevSection) {
-                        prevSection.scrollIntoView({ 
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            }
-            
-            // Reactivar navegación después de un tiempo
-            setTimeout(() => {
-                isScrolling = false;
-            }, 800);
-        }
-    }
-    
-    // ========================================
     // BOTÓN "VOLVER ARRIBA"
     // ========================================
     const backToTop = document.getElementById('backToTop');

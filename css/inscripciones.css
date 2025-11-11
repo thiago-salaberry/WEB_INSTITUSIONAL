@@ -25,9 +25,14 @@ body {
     max-width: 100%;
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
     padding: 30px 20px;
     margin-top: 45px;
     box-sizing: border-box;
+=======
+    padding: 30px 0;
+    margin-top: 0;
+>>>>>>> 0c921ebabc2c03ebb63593c76b50f9f9b49b50db
 }
 .titulos {
     text-align: center;
@@ -744,4 +749,9 @@ body {
     100% {
         transform: translateX(25%);
     }
+}
+
+/* Override para navbar en página de inscripciones */
+.navbar {
+    position: static !important;
 }

@@ -24,6 +24,9 @@
             <p>
                 <a href="mailto:inscripcion@tecnica1vl.org"><i class="fas fa-envelope"></i> inscripcion@tecnica1vl.org</a>
             </p>
+                <p>
+                <a href="mailto:titulos@tecnica1vl.org"><i class="fas fa-envelope"></i> titulos@tecnica1vl.org</a>
+            </p>
         </div>
         
         <div class="footer-section">
