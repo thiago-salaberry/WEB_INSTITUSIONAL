@@ -12,8 +12,198 @@
 </head>
 <body>
     <?php include '../components/navbar-subpages.php'; ?>
+    <main>
+        <div class="cont_title">
+            <h1 class="titulo">Autoridades</h1>
+        </div>
+        <div class="cont_title">
+            <h2 class="sub-titulo">
+                Conoce al equipo directivo y docente que hace posible la formación técnica de calidad
+            </h2>
+        </div>
+            
+            <!-- Equipo Directivo -->
+            <h1 class="h1-cargo">Equipo Directivo</h1>
+            <div class="grid equipo-directivo">
+                <div class="autoridad" onclick="abrirModal('Lic. María González', 'Directora General', '../img/directora.jpg', 'Licenciada en Educación con especialización en Tecnología Educativa. Cuenta con más de 15 años de experiencia en gestión educativa y ha liderado importantes proyectos de innovación tecnológica en instituciones educativas. Su visión es formar estudiantes preparados para los desafíos del siglo XXI.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la directora">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Lic. María González</h2>
+                        <span class="cargo">Directora General</span>
+                    </div>
+                </div>
 
-    <!-- Fondo animado como el de prueba -->
+                <div class="autoridad" onclick="abrirModal('Prof. Carlos Rodríguez', 'Vicedirector Académico', '../img/vicedirector.jpg', 'Profesor de Matemáticas con maestría en Educación Tecnológica. Especialista en currículos técnicos y coordinador de proyectos de investigación aplicada. Ha publicado diversos trabajos sobre metodologías de enseñanza en carreras técnicas.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del vicedirector">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Carlos Rodríguez</h2>
+                        <span class="cargo">Vicedirector Académico</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Ing. Ana Martínez', 'Coordinadora Técnica', '../img/coordinadora.jpg', 'Ingeniera Electrónica con experiencia en la industria tecnológica. Responsable de la actualización constante de los laboratorios y equipos técnicos. Coordina las prácticas profesionales y mantiene vínculos con empresas del sector.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la coordinadora técnica">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Ing. Ana Martínez</h2>
+                        <span class="cargo">Coordinadora Técnica</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secretaría -->
+            <h1 class="h1-cargo">Secretaría</h1>
+            <div class="grid secretaria">
+                <div class="autoridad" onclick="abrirModal('Lic. Patricia López', 'Secretaria Académica', '../img/secretaria.jpg', 'Licenciada en Administración Educativa con especialización en gestión documental. Responsable de la organización académica, trámites estudiantiles y coordinación de exámenes. Atiende consultas de estudiantes y padres sobre procedimientos administrativos.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la secretaria académica">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Lic. Patricia López</h2>
+                        <span class="cargo">Secretaria Académica</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Sr. Roberto Silva', 'Secretario Administrativo', '../img/secretario-admin.jpg', 'Técnico administrativo con amplia experiencia en gestión financiera educativa. Maneja presupuesto institucional, proveedores y recursos materiales. Coordina el mantenimiento de instalaciones y equipos.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del secretario administrativo">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Sr. Roberto Silva</h2>
+                        <span class="cargo">Secretario Administrativo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jefes de Departamentos -->
+            <h1 class="h1-cargo">Jefes de Departamentos</h1>
+            <div class="grid jefes-departamento">
+                <div class="autoridad" onclick="abrirModal('Prof. Miguel Torres', 'Jefe Dpto. Programación', '../img/jefe-programacion.jpg', 'Profesor de Informática con especialización en desarrollo de software. Coordina el departamento de Programación y coordina proyectos de desarrollo de aplicaciones. Ha participado en concursos de programación a nivel provincial.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del jefe de programación">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Miguel Torres</h2>
+                        <span class="cargo">Jefe Dpto. Programación</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Ing. Laura Fernández', 'Jefa Dpto. Electrónica', '../img/jefa-electronica.jpg', 'Ingeniera Electrónica con experiencia industrial. Responsable del laboratorio de electrónica y proyectos de automatización. Coordina prácticas en empresas del sector electrónico y mantiene actualizado el equipamiento técnico.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la jefa de electrónica">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Ing. Laura Fernández</h2>
+                        <span class="cargo">Jefa Dpto. Electrónica</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Prof. Daniel García', 'Jefe Dpto. Matemática', '../img/jefe-matematica.jpg', 'Profesor de Matemáticas con maestría en Matemática Aplicada. Especialista en matemática para carreras técnicas. Coordina el departamento de Matemáticas y desarrolla materiales didácticos específicos para estudiantes técnicos.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del jefe de matemática">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Daniel García</h2>
+                        <span class="cargo">Jefe Dpto. Matemática</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Prof. Silvia Ruiz', 'Jefa Dpto. Comunicación', '../img/jefa-comunicacion.jpg', 'Profesora de Lengua y Literatura con especialización en comunicación técnica. Coordina el departamento de Comunicación y desarrolla habilidades de expresión oral y escrita en estudiantes técnicos. Organiza talleres de redacción técnica.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la jefa de comunicación">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Silvia Ruiz</h2>
+                        <span class="cargo">Jefa Dpto. Comunicación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preceptores -->
+            <h1 class="h1-cargo">Preceptores</h1>
+            <div class="grid preceptores">
+                <div class="autoridad" onclick="abrirModal('Prof. Javier Morales', 'Preceptor 1er Año', '../img/preceptor-1.jpg', 'Profesor con especialización en orientación estudiantil. Acompaña a los estudiantes de primer año en su adaptación a la escuela técnica. Coordina actividades de integración y brinda apoyo pedagógico personalizado.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del preceptor de 1er año">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Javier Morales</h2>
+                        <span class="cargo">Preceptor 1er Año</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Prof. Carolina Vega', 'Preceptora 2do Año', '../img/preceptora-2.jpg', 'Profesora especializada en desarrollo adolescente. Trabaja con estudiantes de segundo año en su crecimiento personal y profesional. Coordina proyectos de tutoría y actividades extracurriculares.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la preceptora de 2do año">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Carolina Vega</h2>
+                        <span class="cargo">Preceptora 2do Año</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Prof. Martín Soto', 'Preceptor 3er Año', '../img/preceptor-3.jpg', 'Profesor con experiencia en orientación vocacional. Acompaña a estudiantes de tercer año en la definición de su proyecto profesional. Coordina prácticas laborales y búsqueda de oportunidades de empleo.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del preceptor de 3er año">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Prof. Martín Soto</h2>
+                        <span class="cargo">Preceptor 3er Año</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auxiliares -->
+            <h1 class="h1-cargo">Personal Auxiliar</h1>
+            <div class="grid auxiliares">
+                <div class="autoridad" onclick="abrirModal('Sra. Elena Castro', 'Encargada de Biblioteca', '../img/bibliotecaria.jpg', 'Técnica bibliotecaria con especialización en recursos educativos. Gestiona el centro de recursos de la institución, organiza el material bibliográfico y apoya en la investigación estudiantil. Coordina préstamos y mantenimiento de la colección.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la bibliotecaria">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Sra. Elena Castro</h2>
+                        <span class="cargo">Encargada de Biblioteca</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Sr. Pedro Ramírez', 'Técnico de Laboratorio', '../img/tecnico-lab.jpg', 'Técnico electrónico con experiencia en mantenimiento de equipos. Responsable del funcionamiento y mantenimiento de los laboratorios técnicos. Prepara materiales y equipos para las prácticas estudiantiles.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del técnico de laboratorio">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Sr. Pedro Ramírez</h2>
+                        <span class="cargo">Técnico de Laboratorio</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Sra. Rosa Medina', 'Encargada de Cooperadora', '../img/cooperadora.jpg', 'Administradora con experiencia en gestión escolar. Coordina las actividades de la cooperadora escolar, gestiona recursos económicos y organiza eventos institucionales. Brinda apoyo administrativo general.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto de la cooperadora">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Sra. Rosa Medina</h2>
+                        <span class="cargo">Encargada de Cooperadora</span>
+                    </div>
+                </div>
+
+                <div class="autoridad" onclick="abrirModal('Sr. Jorge Luna', 'Portero Mayor', '../img/portero.jpg', 'Personal de seguridad y mantenimiento general. Responsable de la seguridad del establecimiento, control de accesos y mantenimiento básico de las instalaciones. Atiende emergencias y coordina el ingreso de visitantes.')">
+                    <div class="foto-container">
+                        <img src="../img/logo.webp" alt="foto del portero">
+                    </div>
+                    <div class="info-autoridad">
+                        <h2 class="nombre-autoridad">Sr. Jorge Luna</h2>
+                        <span class="cargo">Portero Mayor</span>
+                    </div>
+                </div>
+            </div>
+            
+    </main>
+<!-- Fondo animado como el de prueba -->
     <div class="animated-background">
         <!-- Líneas onduladas que cruzan la pantalla -->
         <div class="wave-lines">
@@ -36,152 +226,6 @@
             <div class="particle"></div>
         </div>
     </div>
-
-    <main>
-        <div class="main">
-            <!-- Equipo Directivo -->
-            <h1 class="h1-cargo">Equipo Directivo</h1>
-            <div class="grid equipo-directivo">
-                <div class="autoridad" onclick="abrirModal('Director/a', 'Dirección General', '../img/logo.webp', 'Descripción del Director/a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea impedit dolorum voluptates eos necessitatibus. At consequuntur provident, dignissimos a nesciunt reiciendis magni veritatis laboriosam tenetur, unde optio? Consequuntur, voluptatum?')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del directivo">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Dirección General</h2>
-                        <span class="cargo">Director/a</span>
-                    </div>
-                </div>
-                
-                <div class="autoridad" onclick="abrirModal('Vicedirector/a', 'Vicedirección', '../img/logo.webp', 'Descripción del Vicedirector/a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea impedit dolorum voluptates eos necessitatibus.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del vicedirectivo">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Vicedirección</h2>
-                        <span class="cargo">Vicedirector/a</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Secretaria -->
-            <h1 class="h1-cargo">Secretaría</h1>
-            <div class="grid secretaria">
-                <div class="autoridad" onclick="abrirModal('Secretario/a', 'Secretaría Académica', '../img/logo.webp', 'Descripción del Secretario/a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea impedit dolorum voluptates eos necessitatibus.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del secretario">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Secretaría Académica</h2>
-                        <span class="cargo">Secretario/a</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Jefes de Departamentos -->
-            <h1 class="h1-cargo">Jefes de Departamentos</h1>
-            <div class="grid jefes-departamento">
-                <div class="autoridad" onclick="abrirModal('Jefe Dpto. Programación', 'Departamento de Programación', '../img/logo.webp', 'Descripción del Jefe del Departamento de Programación. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del jefe de programación">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Departamento de Programación</h2>
-                        <span class="cargo">Jefe Dpto. Programación</span>
-                    </div>
-                </div>
-                
-                <div class="autoridad" onclick="abrirModal('Jefe Dpto. Electrónica', 'Departamento de Electrónica', '../img/logo.webp', 'Descripción del Jefe del Departamento de Electrónica. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del jefe de electrónica">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Departamento de Electrónica</h2>
-                        <span class="cargo">Jefe Dpto. Electrónica</span>
-                    </div>
-                </div>
-                
-                <div class="autoridad" onclick="abrirModal('Jefe Dpto. Matemática', 'Departamento de Matemática', '../img/logo.webp', 'Descripción del Jefe del Departamento de Matemática. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del jefe de matemática">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Departamento de Matemática</h2>
-                        <span class="cargo">Jefe Dpto. Matemática</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Preceptores -->
-            <h1 class="h1-cargo">Preceptores</h1>
-            <div class="grid preceptores">
-                <div class="autoridad" onclick="abrirModal('Preceptor 1er Año', 'Preceptoría 1er Año', '../img/logo.webp', 'Descripción del Preceptor de 1er Año. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del preceptor">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Preceptoría 1er Año</h2>
-                        <span class="cargo">Preceptor 1er Año</span>
-                    </div>
-                </div>
-                
-                <div class="autoridad" onclick="abrirModal('Preceptor 2do Año', 'Preceptoría 2do Año', '../img/logo.webp', 'Descripción del Preceptor de 2do Año. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del preceptor">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Preceptoría 2do Año</h2>
-                        <span class="cargo">Preceptor 2do Año</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Auxiliares -->
-            <h1 class="h1-cargo">Personal Auxiliar</h1>
-            <div class="grid auxiliares">
-                <div class="autoridad" onclick="abrirModal('Personal de Limpieza', 'Servicios Generales', '../img/logo.webp', 'Descripción del Personal de Limpieza. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del personal">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Servicios Generales</h2>
-                        <span class="cargo">Personal de Limpieza</span>
-                    </div>
-                </div>
-                
-                <div class="autoridad" onclick="abrirModal('Portero', 'Seguridad y Acceso', '../img/logo.webp', 'Descripción del Portero. Lorem ipsum dolor sit amet consectetur adipisicing elit.')">
-                    <div class="foto-container">
-                        <img src="../img/logo.webp" alt="foto del portero">
-                    </div>
-                    <div class="info-autoridad">
-                        <h2 class="nombre-autoridad">Seguridad y Acceso</h2>
-                        <span class="cargo">Portero</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div id="modalDirectivo" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="close" onclick="cerrarModal()">&times;</button>
-                        <div class="modal-info-autoridad">
-                            <h3 id="modalNombre" class="modal-name">Nombre Autoridad</h3>
-                            <p id="modalCargo" class="modal-cargo">Cargo</p>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-image">
-                            <img id="modalImagen" src="../img/logo.webp" alt="Foto de la autoridad">
-                        </div>
-                        <div class="modal-info">
-                            <p id="modalDescripcion" class="modal-descripcion">Descripción de la autoridad...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
     <?php include '../components/footer.php'; ?>
 
     <script src="../scripts/navbar.js"></script>
