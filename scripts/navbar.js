@@ -71,8 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     const navbar = document.querySelector('.navbar');
     let lastScrollTop = 0; // Para detectar dirección del scroll
+    const scrollThreshold = 100; // Píxeles desde arriba para activar el comportamiento
     
     if (navbar) {
+        // Asegurar que el navbar tenga la transición configurada
+        navbar.style.transition = 'transform 0.3s ease-in-out, background 0.3s ease, box-shadow 0.3s ease';
+        navbar.style.transform = 'translateY(0)'; // Inicializar visible
+        
         window.addEventListener('scroll', function() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             
@@ -86,17 +91,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // OCULTAR/MOSTRAR NAVBAR: Esconder al scrollear hacia abajo, mostrar al subir
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                // Usuario scrolleando hacia abajo - ocultar navbar
-                navbar.style.transform = 'translateY(-100%)';
+            if (scrollTop > scrollThreshold) {
+                // Solo ocultar/mostrar si estamos más abajo del threshold
+                if (scrollTop > lastScrollTop) {
+                    // Usuario scrolleando hacia abajo - ocultar navbar
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    // Usuario scrolleando hacia arriba - mostrar navbar
+                    navbar.style.transform = 'translateY(0)';
+                }
             } else {
-                // Usuario scrolleando hacia arriba - mostrar navbar
+                // Si estamos arriba del threshold, siempre mostrar
                 navbar.style.transform = 'translateY(0)';
             }
             
             // Actualizar posición anterior del scroll
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
+        }, { passive: true });
     }
     
     // Mensaje de confirmación en consola

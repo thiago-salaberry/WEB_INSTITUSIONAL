@@ -18,7 +18,7 @@
 
     <?php include '../components/navbar-subpages.php'; ?>
     
-    <div class="main-insc-area">
+    <main class="main-insc-area" style="margin-top: 100px;" role="main">
         <div class="cont_title">
             <h1 class="titulo">Inscripciones 2026</h1>
         </div>
@@ -108,7 +108,7 @@
                 </div>
             </section>
         </div>
-    </div>
+    </main>
     <?php include '../components/footer.php'; ?>
 
     <script src="../scripts/inscripciones.js"></script>
