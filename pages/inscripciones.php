@@ -59,9 +59,9 @@
                 </div>
                 <div class="grade_subjects">
                     <ul class="subjects-list" id="subjects_1">
-                        <li>Lenguajes Tecnológicos</li>
-                        <li>Procedimientos Técnicos</li>
-                        <li>Sistemas Tecnológicos</li>
+                        <li class="taller">Lenguajes Tecnológicos</li>
+                        <li class="taller">Procedimientos Técnicos</li>
+                        <li class="taller">Sistemas Tecnológicos</li>
                         <li>Ciencias Naturales</li>
                         <li>Ciencias Sociales</li>
                         <li>Construcción Ciudadanía</li>
@@ -72,9 +72,9 @@
                         <li>Prácticas del lenguaje</li>
                     </ul>
                     <ul class="subjects-list" id="subjects_2" style="display:none;">
-                        <li>Lenguajes Tecnológicos II</li>
-                        <li>Procedimientos Técnicos II</li>
-                        <li>Sistemas Tecnológicos II</li>
+                        <li class="taller">Lenguajes Tecnológicos II</li>
+                        <li class="taller">Procedimientos Técnicos II</li>
+                        <li class="taller">Sistemas Tecnológicos II</li>
                         <li>Ciencias Naturales</li>
                         <li>Ciencias Sociales</li>
                         <li>Construcción Ciudadanía</li>
@@ -85,9 +85,9 @@
                         <li>Prácticas del lenguaje</li>
                     </ul>
                     <ul class="subjects-list" id="subjects_3" style="display:none;"> 
-                        <li>Lenguajes Tecnológicos III</li>
-                        <li>Procedimientos Técnicos III</li>
-                        <li>Sistemas Tecnológicos III</li>
+                        <li class="taller">Lenguajes Tecnológicos III</li>
+                        <li class="taller">Procedimientos Técnicos III</li>
+                        <li class="taller">Sistemas Tecnológicos III</li>
                         <li>Fisico-Química</li>
                         <li>Biología</li>
                         <li>Historia</li>
