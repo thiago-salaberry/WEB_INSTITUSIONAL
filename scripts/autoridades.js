@@ -31,6 +31,7 @@ function abrirModal(nombre, cargo, imagen, descripcion) {
         // Mostrar modal con animación
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
+        document.body.classList.add('modal-open');
         
         // Agregar listener para cerrar con Escape
         document.addEventListener('keydown', cerrarModalConEscape);
@@ -60,6 +61,7 @@ function cerrarModal() {
             modal.classList.remove('fade-out');
             modalContent.classList.remove('slide-out');
             document.body.style.overflow = 'auto';
+            document.body.classList.remove('modal-open');
         }, ANIMATION_DURATION);
         
         // Remover listener del escape

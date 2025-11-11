@@ -1200,3 +1200,8 @@ main {
         transform: none;
     }
 }
+
+/* Ocultar navbar cuando el modal está abierto */
+body.modal-open .navbar {
+    display: none;
+}
