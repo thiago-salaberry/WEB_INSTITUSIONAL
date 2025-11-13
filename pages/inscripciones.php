@@ -103,9 +103,9 @@
             <section id="slide_when" class="slide-section">
                 <h2><i class="fa-regular fa-calendar-check"></i>¿Cuándo se abren las inscripciones?</h2>
                 <p>Las inscripciones se abren en el mes de Diciembre. Para inscribirse, es necesario llevar todo lo indicado en la sección "¿Qué traer?".<br>Además, en el mes de Noviembre se realiza la ExpoTécnica, una muestra de proyectos realizados durante el año. Es una excelente oportunidad para conocer el trabajo de nuestros estudiantes y vivir la experiencia técnica desde dentro.</p>
-                <div class="video-container">
-                    <iframe class="responsive-video" src="https://www.youtube.com/embed/L5iSNGRq_KE?si=sEWZxuuVfOtQzNWH" title="YouTube video player" allowfullscreen></iframe>
-                </div>
+                <iframe class="responsive-video" src="https://www.youtube.com/embed/L5iSNGRq_KE?si=sEWZxuuVfOtQzNWH" title="YouTube video player" allowfullscreen></iframe>
+                <!-- <div class="video-container">
+                </div> -->
             </section>
         </div>
     </main>
